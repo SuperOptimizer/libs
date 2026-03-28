@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcx.a "CMakeFiles/free-libcx.dir/src/libcx/arena.c.o" "CMakeFiles/free-libcx.dir/src/libcx/str.c.o" "CMakeFiles/free-libcx.dir/src/libcx/vec.c.o" "CMakeFiles/free-libcx.dir/src/libcx/map.c.o" "CMakeFiles/free-libcx.dir/src/libcx/path.c.o" "CMakeFiles/free-libcx.dir/src/libcx/utf8.c.o" "CMakeFiles/free-libcx.dir/src/libcx/log.c.o" "CMakeFiles/free-libcx.dir/src/libcx/base64.c.o" "CMakeFiles/free-libcx.dir/src/libcx/hash.c.o" "CMakeFiles/free-libcx.dir/src/libcx/argparse.c.o"
-/usr/bin/ranlib libcx.a

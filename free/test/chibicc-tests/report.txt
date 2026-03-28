@@ -1,9 +1,0 @@
-chibicc test suite report
-Compiler: ./build/free-cc
-Flags: -I src/libc/include -w
-Date: Sun 15 Mar 2026 02:38:01 AM CDT
-Total: 41
-Passed: 0
-Failed: 0
-Skipped: 41
-Timeouts: 0

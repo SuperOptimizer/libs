@@ -1,1 +1,0 @@
-/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -nostdlib -nostartfiles -static -Wl,--dependency-file=CMakeFiles/free-readelf.dir/link.d "CMakeFiles/free-readelf.dir/src/readelf/readelf.c.o" "CMakeFiles/free-readelf.dir/src/libc/arch/aarch64/crt.S.o" "CMakeFiles/free-readelf.dir/src/libc/arch/aarch64/syscall.S.o" -o free-readelf

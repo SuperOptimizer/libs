@@ -1,1 +1,0 @@
-/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -nostdlib -nostartfiles -static -Wl,--dependency-file=CMakeFiles/free-sortextable.dir/link.d "CMakeFiles/free-sortextable.dir/src/depmod/sortextable.c.o" "CMakeFiles/free-sortextable.dir/src/libc/arch/aarch64/crt.S.o" "CMakeFiles/free-sortextable.dir/src/libc/arch/aarch64/syscall.S.o" -o free-sortextable

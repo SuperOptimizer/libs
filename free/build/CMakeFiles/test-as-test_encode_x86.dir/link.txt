@@ -1,1 +1,0 @@
-/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test-as-test_encode_x86.dir/link.d "CMakeFiles/test-as-test_encode_x86.dir/test/as/test_encode_x86.c.o" "CMakeFiles/test-as-test_encode_x86.dir/src/as/encode_x86.c.o" -o test-as-test_encode_x86  libfree.a

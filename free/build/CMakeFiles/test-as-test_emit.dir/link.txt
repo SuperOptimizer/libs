@@ -1,1 +1,0 @@
-/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test-as-test_emit.dir/link.d "CMakeFiles/test-as-test_emit.dir/test/as/test_emit.c.o" "CMakeFiles/test-as-test_emit.dir/src/as/encode.c.o" -o test-as-test_emit  libfree.a

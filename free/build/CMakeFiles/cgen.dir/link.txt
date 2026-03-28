@@ -1,1 +1,0 @@
-/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/cgen.dir/link.d CMakeFiles/cgen.dir/test/gen/cgen.c.o -o cgen

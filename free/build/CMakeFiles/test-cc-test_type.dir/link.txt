@@ -1,1 +1,0 @@
-/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test-cc-test_type.dir/link.d "CMakeFiles/test-cc-test_type.dir/test/cc/test_type.c.o" "CMakeFiles/test-cc-test_type.dir/src/cc/type.c.o" -o test-cc-test_type  libfree.a

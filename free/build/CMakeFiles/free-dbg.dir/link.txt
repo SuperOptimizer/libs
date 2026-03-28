@@ -1,1 +1,0 @@
-/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -nostdlib -nostartfiles -static -Wl,--dependency-file=CMakeFiles/free-dbg.dir/link.d "CMakeFiles/free-dbg.dir/src/dbg/dbg.c.o" "CMakeFiles/free-dbg.dir/src/libc/arch/aarch64/crt.S.o" "CMakeFiles/free-dbg.dir/src/libc/arch/aarch64/syscall.S.o" -o free-dbg
