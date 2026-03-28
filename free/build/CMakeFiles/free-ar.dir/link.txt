@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -nostdlib -nostartfiles -static -Wl,--dependency-file=CMakeFiles/free-ar.dir/link.d "CMakeFiles/free-ar.dir/src/ar/ar.c.o" "CMakeFiles/free-ar.dir/src/libc/arch/aarch64/crt.S.o" "CMakeFiles/free-ar.dir/src/libc/arch/aarch64/syscall.S.o" -o free-ar

@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -nostdlib -nostartfiles -static -Wl,--dependency-file=CMakeFiles/free-addr2line.dir/link.d "CMakeFiles/free-addr2line.dir/src/addr2line/addr2line.c.o" "CMakeFiles/free-addr2line.dir/src/libc/arch/aarch64/crt.S.o" "CMakeFiles/free-addr2line.dir/src/libc/arch/aarch64/syscall.S.o" -o free-addr2line

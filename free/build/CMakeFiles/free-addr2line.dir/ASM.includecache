@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/forrest/CLionProjects/free/src/libc/arch/aarch64/crt.S
+
+/home/forrest/CLionProjects/free/src/libc/arch/aarch64/syscall.S
+

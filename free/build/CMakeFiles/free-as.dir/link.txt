@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/free-as.dir/link.d "CMakeFiles/free-as.dir/src/as/lex.c.o" "CMakeFiles/free-as.dir/src/as/encode.c.o" "CMakeFiles/free-as.dir/src/as/encode_x86.c.o" "CMakeFiles/free-as.dir/src/as/emit.c.o" "CMakeFiles/free-as.dir/src/as/as.c.o" -o free-as

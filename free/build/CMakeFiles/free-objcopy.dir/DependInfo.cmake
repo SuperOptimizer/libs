@@ -1,0 +1,36 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "ASM"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_ASM
+  "/home/forrest/CLionProjects/free/src/libc/arch/aarch64/crt.S" "/home/forrest/CLionProjects/free/build/CMakeFiles/free-objcopy.dir/src/libc/arch/aarch64/crt.S.o"
+  "/home/forrest/CLionProjects/free/src/libc/arch/aarch64/syscall.S" "/home/forrest/CLionProjects/free/build/CMakeFiles/free-objcopy.dir/src/libc/arch/aarch64/syscall.S.o"
+  )
+set(CMAKE_ASM_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "/home/forrest/CLionProjects/free/include"
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/forrest/CLionProjects/free/src/objcopy/objcopy.c" "CMakeFiles/free-objcopy.dir/src/objcopy/objcopy.c.o" "gcc" "CMakeFiles/free-objcopy.dir/src/objcopy/objcopy.c.o.d"
+  "" "free-objcopy" "gcc" "CMakeFiles/free-objcopy.dir/link.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

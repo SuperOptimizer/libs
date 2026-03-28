@@ -1,0 +1,330 @@
+===============================================================================
+  FREE TOOLCHAIN — NEXT STEPS
+  Roadmap from current state to self-hosting and Linux kernel compilation
+===============================================================================
+
+CURRENT STATE (end of initial session):
+  - 593 files, ~70,000 LOC
+  - Build: GREEN, 53/53 integration tests pass
+  - Self-hosting: 24/24 compiler files compile with free-cc, stage1 binary
+    links (557KB) but segfaults at runtime
+  - Kernel patterns: 3/3 pass (container_of, atomics, bitops)
+  - Kbuild compat: 22/22 pass
+
+===============================================================================
+PHASE 1: COMPLETE SELF-HOSTING (estimated 1-2 weeks)
+===============================================================================
+
+1.1 Fix stage1 runtime segfault
+    - Run stage1/free-cc under GDB to find crash location
+    - Likely causes: struct member access codegen, pointer arithmetic,
+      function call convention errors, stack frame corruption
+    - Generate assembly with -S for a minimal crashing case, compare
+      gcc output vs free-cc output instruction by instruction
+    - Common codegen bugs to check:
+      * Stack frame size miscalculation (misaligned SP)
+      * Callee-saved register not restored
+      * Wrong register used after function call (x0-x7 clobbered)
+      * Struct return by value not handled
+      * Large struct copy missing
+      * va_arg advancing wrong offset
+
+1.2 Fix remaining codegen quality issues
+    - Test every C feature the compiler source uses:
+      * Nested struct access (node->lhs->rhs->val)
+      * Long chains of pointer dereference
+      * Switch with 50+ cases (gen.c has large switches)
+      * Function pointers stored in arrays
+      * Variadic functions (err(), emit())
+      * String literal addressing across functions
+      * Static local variables
+      * Extern declarations across translation units
+    - Create targeted test cases for each failure
+
+1.3 Achieve bootstrap closure
+    - Stage 1: Build free-cc with gcc (done)
+    - Stage 2: Build free-cc with stage1 free-cc
+    - Stage 3: Build free-cc with stage2 free-cc
+    - Verify: cmp stage2/free-cc stage3/free-cc (must be identical)
+    - If not identical, diff the assembly output to find divergence
+    - Run scripts/bootstrap.sh to automate
+
+1.4 Run full test suite with stage1 compiler
+    - All 53 integration tests must pass when compiled by stage1
+    - All corpus tests (features, stress, conformance) must pass
+    - Run cgen random program testing (1000 seeds)
+    - Any failure = codegen bug to fix
+
+===============================================================================
+PHASE 2: COMPILE REAL-WORLD SOFTWARE (estimated 2-4 weeks)
+===============================================================================
+
+2.1 Compile Lua 5.1
+    - Download lua-5.1.5 source
+    - Set CC=./build/free-cc in Makefile
+    - Fix compilation errors one by one
+    - Expected issues: missing libc functions, GNU extensions,
+      complex macro patterns
+    - Goal: lua binary that passes lua test suite
+
+2.2 Compile SQLite
+    - Download sqlite3 amalgamation (single .c file)
+    - sqlite3.c is ~250K lines — extreme stress test
+    - Expected issues: complex preprocessor usage, large switch
+      statements, extensive use of sizeof and offsetof
+    - Goal: sqlite3 binary that passes basic queries
+
+2.3 Compile musl libc
+    - musl is designed to be compiled by any C compiler
+    - Tests all libc header compatibility
+    - Expected issues: inline assembly, complex types,
+      architecture-specific headers
+    - Goal: musl libc.a built with free toolchain
+
+2.4 Compile busybox
+    - Multi-call binary like our own ar/objdump
+    - Tests many POSIX/Linux interfaces
+    - Heavy use of GNU extensions
+    - Goal: busybox binary with basic applets working
+
+===============================================================================
+PHASE 3: KERNEL BUILD PREREQUISITES (estimated 4-8 weeks)
+===============================================================================
+
+3.1 Complete GNU C extension support
+    - [ ] Attribute between return type and function name:
+          int __attribute__((weak)) func(void)
+    - [ ] __attribute__((section(".init.text"))) codegen
+          (emit .section directive per function)
+    - [ ] __attribute__((aligned(N))) on variables
+          (emit .balign N before variable)
+    - [ ] __attribute__((constructor/destructor)) codegen
+          (add to .init_array/.fini_array)
+    - [ ] __builtin_constant_p compile-time evaluation
+          (currently always returns 0, need constant folding)
+    - [ ] Statement expression as initializer
+          (int x = ({ ... }); at function scope)
+    - [ ] typeof in sizeof: sizeof(typeof(x))
+    - [ ] __builtin_choose_expr with type-dependent branches
+    - [ ] __label__ with goto in statement expressions
+
+3.2 Complete preprocessor
+    - [ ] Macro argument prescan (arguments expanded before substitution)
+    - [ ] Correct ## with empty arguments (GCC behavior)
+    - [ ] #include_next with proper path tracking (done but verify)
+    - [ ] __COUNTER__ predefined macro (incrementing counter)
+    - [ ] _Pragma("GCC diagnostic push/pop/ignored")
+    - [ ] Handle very deeply nested macros (kernel uses 100+ levels)
+    - [ ] Correct line tracking through macro expansions
+    - [ ] -imacros flag (preprocess for macros only)
+
+3.3 Complete assembler
+    - [ ] .inst directive (emit raw instruction word)
+    - [ ] .purgem (undefine macro)
+    - [ ] .irp / .irpc (iterate macros)
+    - [ ] .ltorg (literal pool dump)
+    - [ ] ADR pseudo-instruction (ldr =symbol)
+    - [ ] Assembler expressions: .- label (current minus label)
+    - [ ] .cfi_* directives (call frame info for unwinding)
+          .cfi_startproc, .cfi_endproc, .cfi_def_cfa,
+          .cfi_offset, .cfi_adjust_cfa_offset
+    - [ ] Full aarch64 ISA coverage:
+          - LDAPR, STLR (load-acquire, store-release)
+          - PRFM (prefetch memory)
+          - DC/IC (data/instruction cache maintenance)
+          - TLBI (TLB invalidate)
+          - AT (address translate)
+          - HINT instruction (various hints)
+          - MSR/MRS for all system registers
+          - CCMN/CCMP (conditional compare)
+          - EXTR (extract bits)
+          - MOVK with shift for 64-bit constants
+
+3.4 Complete linker
+    - [ ] Linker script: SORT_BY_ALIGNMENT
+    - [ ] Linker script: CONSTRUCTORS / SORT_BY_INIT_PRIORITY
+    - [ ] Linker script: OVERLAY support
+    - [ ] Linker script: OUTPUT_FORMAT handling
+    - [ ] Linker script: expression evaluation with symbol values
+    - [ ] Linker script: SIZEOF_HEADERS
+    - [ ] SHT_GROUP / COMDAT section handling
+    - [ ] SHF_MERGE / SHF_STRINGS section merging
+    - [ ] -z flags (noexecstack, relro, now, etc.)
+    - [ ] --defsym symbol=value
+    - [ ] -pie (position-independent executable for KASLR)
+    - [ ] --sort-section (section ordering control)
+    - [ ] Archive thin mode (ar -T)
+    - [ ] Handle input files mixed with flags in any order
+
+3.5 Missing tools
+    - [ ] free-nm: add -S (size), -D (dynamic), --defined-only flags
+    - [ ] free-objcopy: add --prefix-symbols, --redefine-sym
+    - [ ] free-objcopy: add -I binary (binary input format)
+    - [ ] free-readelf (or extend objdump):
+          -h (header), -S (sections), -s (symbols), -r (relocs),
+          -l (program headers), -d (dynamic), -n (notes),
+          --debug-dump (DWARF display)
+    - [ ] free-size: section size reporting
+
+===============================================================================
+PHASE 4: KERNEL COMPILATION ATTEMPT (estimated 4-8 weeks)
+===============================================================================
+
+4.1 Set up kernel build environment
+    - Download Linux kernel source (6.x)
+    - Configure with: make ARCH=arm64 defconfig
+    - Set toolchain:
+        make ARCH=arm64 \
+          CC=./free-cc \
+          AS=./free-as \
+          LD=./free-ld \
+          AR=./free-ar \
+          NM=./free-nm \
+          OBJCOPY=./free-objcopy \
+          STRIP=./free-strip \
+          OBJDUMP=./free-objdump
+
+4.2 Iterative compilation
+    - Start with: make ARCH=arm64 vmlinux 2>&1 | head -50
+    - Fix the FIRST error, rebuild, repeat
+    - Categories of errors to expect:
+      a) Missing compiler flags (add as no-ops or implement)
+      b) Missing preprocessor features
+      c) Missing GNU C extensions
+      d) Assembler errors in .S files
+      e) Linker errors (relocations, script features)
+      f) Codegen bugs (wrong output for valid C)
+
+4.3 Priority order for kernel files
+    - Start with: scripts/basic/fixdep.c (host tool, simple C)
+    - Then: kernel/printk/printk.c (exercises macros heavily)
+    - Then: arch/arm64/kernel/head.S (exercises assembler)
+    - Then: init/main.c (exercises everything)
+    - Then: drivers/of/base.c (exercises data structures)
+    - Then: attempt full vmlinux link with linker script
+
+4.4 Handle kernel-specific requirements
+    - .config / Kconfig generated headers
+    - Module versioning (CONFIG_MODVERSIONS)
+    - Kernel memory model (__read_once_size, etc.)
+    - Percpu variables
+    - Alternatives patching framework
+    - Exception tables (__ex_table entries)
+    - Jump labels (static keys)
+    - Stack unwinding (frame pointers or ORC)
+
+===============================================================================
+PHASE 5: BOOT THE KERNEL (estimated 2-4 weeks after compilation)
+===============================================================================
+
+5.1 Create bootable Image
+    - free-objcopy -O binary vmlinux Image
+    - Verify Image size and format matches gcc-built version
+    - Compare section layout with readelf
+
+5.2 Test with QEMU
+    - qemu-system-aarch64 -M virt -cpu cortex-a57 \
+        -kernel Image -append "console=ttyAMA0" \
+        -nographic
+    - Expected: kernel boots to panic (no rootfs)
+    - If it boots: VICTORY
+
+5.3 Debug boot failures
+    - Compare free-cc generated vmlinux vs gcc-built vmlinux
+    - Use objdump to diff key functions
+    - Check relocations are applied correctly
+    - Verify .init sections are placed correctly
+    - Check entry point (_start / _text) is correct
+
+5.4 Full boot with rootfs
+    - Build minimal initramfs
+    - Boot to shell
+    - Run basic commands
+    - If all works: the free toolchain has compiled and booted Linux
+
+===============================================================================
+PHASE 6: OPTIMIZATION AND POLISH (ongoing)
+===============================================================================
+
+6.1 Wire SSA IR codegen backend
+    - Replace gen.c (stack-based) with IR-based codegen at -O2+
+    - Run mem2reg to eliminate stack traffic
+    - Run register allocator
+    - Expected: 3-5x speedup in generated code
+
+6.2 Implement core optimizations on IR
+    - SCCP (sparse conditional constant propagation)
+    - DCE (dead code elimination)
+    - GVN (global value numbering / CSE)
+    - Function inlining with heuristics
+    - Loop invariant code motion (LICM)
+    - Loop unrolling
+    - Strength reduction
+    - SROA (scalar replacement of aggregates)
+
+6.3 Backend optimizations
+    - Better instruction selection (fold constants into instructions)
+    - LDP/STP pairing for adjacent loads/stores
+    - Conditional select (CSEL) instead of short branches
+    - Instruction scheduling for pipeline
+    - ADRP coalescing
+
+6.4 Wire LTO end-to-end
+    - Compiler serializes IR with -flto
+    - Linker deserializes, merges, optimizes, generates code
+    - Cross-module inlining
+    - Dead function elimination
+    - Whole-program constant propagation
+
+6.5 Profile-guided optimization (PGO)
+    - Instrument code for profiling
+    - Feed profiles back for:
+      * Hot/cold splitting
+      * Branch probability-based block placement
+      * Profile-guided inlining decisions
+
+===============================================================================
+KNOWN BUGS TO FIX
+===============================================================================
+
+- Stage1 binary segfaults during compilation (codegen quality)
+- Some complex nested expressions may have stack clobbering issues
+- Peephole optimizer has line limit (65536, may need dynamic allocation)
+- Float codegen may have precision issues in some edge cases
+- x86_64 backend is less mature than aarch64 (missing some features)
+- Some test files have stale task list entries in the task tracking system
+
+===============================================================================
+ARCHITECTURE NOTES
+===============================================================================
+
+Compiler pipeline:
+  Source → Lexer → Preprocessor → Parser/AST → [IR → Optimize] → CodeGen → ASM
+  ASM → Assembler → ELF .o → Linker → Executable
+
+Key files:
+  include/free.h      - All shared types (tokens, AST, types, symbols)
+  include/elf.h       - ELF64 structures and constants
+  include/aarch64.h   - AArch64 instruction encoders
+  include/ir.h        - SSA IR data structures
+  src/cc/lex.c        - Tokenizer
+  src/cc/pp.c         - Preprocessor
+  src/cc/parse.c      - Recursive descent parser
+  src/cc/type.c       - Type system
+  src/cc/gen.c        - AArch64 code generator
+  src/cc/gen_x86.c    - x86_64 code generator
+  src/cc/opt.c        - Peephole optimizer
+  src/cc/opt_bb.c     - Basic block optimizer
+  src/cc/ir.c         - AST to IR lowering
+  src/cc/opt_mem2reg.c - SSA promotion
+  src/cc/regalloc.c   - Linear scan register allocator
+  src/cc/lto.c        - Link-time optimization
+  src/cc/cc.c         - Compiler driver
+  src/as/emit.c       - Assembler
+  src/ld/ld.c         - Linker driver
+  src/ld/script.c     - Linker script parser
+  src/ld/reloc.c      - Relocation processing
+
+Build: mkdir build && cd build && cmake .. && make
+Test:  ctest --output-on-failure
+Self:  sh build-self.sh

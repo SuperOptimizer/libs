@@ -1,0 +1,112 @@
+/* EXPECTED: 42 */
+int decode(int x) {
+    switch (x) {
+        case 0: return 100;
+        case 1: return 101;
+        case 2: return 102;
+        case 3: return 103;
+        case 4: return 104;
+        case 5: return 105;
+        case 6: return 106;
+        case 7: return 107;
+        case 8: return 108;
+        case 9: return 109;
+        case 10: return 110;
+        case 11: return 111;
+        case 12: return 112;
+        case 13: return 113;
+        case 14: return 114;
+        case 15: return 115;
+        case 16: return 116;
+        case 17: return 117;
+        case 18: return 118;
+        case 19: return 119;
+        case 20: return 120;
+        case 21: return 121;
+        case 22: return 122;
+        case 23: return 123;
+        case 24: return 124;
+        case 25: return 125;
+        case 26: return 126;
+        case 27: return 127;
+        case 28: return 128;
+        case 29: return 129;
+        case 30: return 130;
+        case 31: return 131;
+        case 32: return 132;
+        case 33: return 133;
+        case 34: return 134;
+        case 35: return 135;
+        case 36: return 136;
+        case 37: return 137;
+        case 38: return 138;
+        case 39: return 139;
+        case 40: return 140;
+        case 41: return 141;
+        case 42: return 142;
+        case 43: return 143;
+        case 44: return 144;
+        case 45: return 145;
+        case 46: return 146;
+        case 47: return 147;
+        case 48: return 148;
+        case 49: return 149;
+        case 50: return 150;
+        case 51: return 151;
+        case 52: return 152;
+        case 53: return 153;
+        case 54: return 154;
+        case 55: return 155;
+        case 56: return 156;
+        case 57: return 157;
+        case 58: return 158;
+        case 59: return 159;
+        case 60: return 160;
+        case 61: return 161;
+        case 62: return 162;
+        case 63: return 163;
+        case 64: return 164;
+        case 65: return 165;
+        case 66: return 166;
+        case 67: return 167;
+        case 68: return 168;
+        case 69: return 169;
+        case 70: return 170;
+        case 71: return 171;
+        case 72: return 172;
+        case 73: return 173;
+        case 74: return 174;
+        case 75: return 175;
+        case 76: return 176;
+        case 77: return 177;
+        case 78: return 178;
+        case 79: return 179;
+        case 80: return 180;
+        case 81: return 181;
+        case 82: return 182;
+        case 83: return 183;
+        case 84: return 184;
+        case 85: return 185;
+        case 86: return 186;
+        case 87: return 187;
+        case 88: return 188;
+        case 89: return 189;
+        case 90: return 190;
+        case 91: return 191;
+        case 92: return 192;
+        case 93: return 193;
+        case 94: return 194;
+        case 95: return 195;
+        case 96: return 196;
+        case 97: return 197;
+        case 98: return 198;
+        case 99: return 199;
+        default: return 0;
+    }
+}
+
+int main(void) {
+    /* decode(42) = 142, 142 % 256 = 142 -- too big for exit.
+       Use a computation: decode(42) - decode(0) = 142 - 100 = 42 */
+    return decode(42) - decode(0);
+}

@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test-libcx-test_vec.dir/link.d "CMakeFiles/test-libcx-test_vec.dir/test/libcx/test_vec.c.o" -o test-libcx-test_vec  libcx.a libfree.a

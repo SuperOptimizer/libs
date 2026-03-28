@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test-libc-test_math.dir/link.d "CMakeFiles/test-libc-test_math.dir/test/libc/test_math.c.o" -o test-libc-test_math  libfree.a

@@ -1,0 +1,9 @@
+total=51
+gcc_compile_fail=0
+free_compile_ok=51
+free_compile_fail=0
+free_run_ok=48
+free_run_fail=3
+free_crash=1
+free_output_match=45
+free_output_mismatch=3

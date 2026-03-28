@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test-ld-test_kernel_features.dir/link.d "CMakeFiles/test-ld-test_kernel_features.dir/test/ld/test_kernel_features.c.o" -o test-ld-test_kernel_features  libfree.a

@@ -1,0 +1,65 @@
+External Compiler Test Suites Report
+=====================================
+Date: 2026-03-14
+
+Suites downloaded and configured:
+  1. c-testsuite (220 tests) - Small C compiler test suite
+  2. TCC tests (129 tests) - TinyCC test suite
+  3. chibicc tests (41 tests) - chibicc incremental tests
+  4. csmith (random generation) - Random C program generator
+
+=== GCC Baseline ===
+
+c-testsuite (gcc, -std=c89 -pedantic -w):
+  220 total, 195 passed, 2 failed, 23 skipped
+  Notes: 23 skips are C99/C11/GNU features. 2 fails are expected
+         (tests assume non-C89 behavior).
+
+TCC tests (gcc, -w):
+  129 total, 100 passed, 8 failed, 21 skipped
+  Notes: Skips are TCC-specific extensions. Fails are output format
+         differences between TCC and gcc.
+
+chibicc tests (gcc, -w):
+  41 total, 14 passed, 4 failed, 23 skipped
+  Notes: Many tests use C11/GNU features that fail with standard gcc.
+         Chibicc's test.h was patched to use standard headers.
+
+csmith (gcc vs gcc, 10 programs):
+  10 total, 10 passed, 0 failed
+
+=== free-cc Results ===
+
+c-testsuite (free-cc, -std=c89 -pedantic -w):
+  220 total, 132 passed, 13 failed, 75 skipped
+  Notes: 132/220 (60%) passing. Good coverage of basic C89 features.
+         75 skips = features not yet implemented in free-cc.
+         13 fails = bugs to investigate.
+
+TCC tests (free-cc, -w):
+  129 total, 6 passed, 6 failed, 117 skipped
+  Notes: Most TCC tests use stdio.h/printf heavily which free-cc
+         likely doesn't fully support yet.
+
+chibicc tests (free-cc, -w):
+  41 total, 0 passed, 0 failed, 41 skipped
+  Notes: All skip due to compilation errors. These tests use C99+
+         features extensively.
+
+=== Runner Scripts ===
+  test/c-testsuite/run_tests.sh
+  test/tcc-tests/run_tests.sh
+  test/chibicc-tests/run_tests.sh
+  test/csmith/run_tests.sh
+
+Usage:
+  CC=./build/free-cc sh test/c-testsuite/run_tests.sh
+  CC=./build/free-cc sh test/tcc-tests/run_tests.sh
+  CC=./build/free-cc sh test/chibicc-tests/run_tests.sh
+  CC=./build/free-cc COUNT=50 sh test/csmith/run_tests.sh
+
+=== Priority for Bug Hunting ===
+1. c-testsuite: Best ROI - 13 failures in basic C89 code, likely real bugs
+2. TCC tests: Good once free-cc supports printf/stdio
+3. csmith: Excellent for finding codegen bugs once basic features work
+4. chibicc: Useful later when C99+ features are added

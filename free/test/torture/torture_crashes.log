@@ -1,0 +1,2194 @@
+OTHER_CRASH 20000112-1: /home/forrest/CLionProjects/free/test/torture/20000112-1.c:2:1: error: cannot find include file 'string.h'
+PARSE_CRASH 20000223-1: /home/forrest/CLionProjects/free/test/torture/20000223-1.c:46:10: error: expected expression, got token kind 82
+/home/forrest/CLionProjects/free/test/torture/20000223-1.c:47:10: error: expected expression, got token kind 56
+/home/forrest/CLionProjects/free/test/torture/20000223-1.c:48:10: error: expected expression, got token kind 74
+OTHER_CRASH 20000227-1: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:9: Warning: .space repeat count is zero, ignored
+/tmp/free-cc-0.s:14: Warning: .space repeat count is zero, ignored
+PARSE_CRASH 20000314-3: /home/forrest/CLionProjects/free/test/torture/20000314-3.c:25:6: error: expected ';', got token kind 56
+/home/forrest/CLionProjects/free/test/torture/20000314-3.c:26:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20000314-3.c:26:1: error: expected ';', got token kind 43
+OTHER_CRASH 20000402-1: /home/forrest/CLionProjects/free/test/torture/20000402-1.c:5:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20000403-1: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:10: Warning: .space repeat count is zero, ignored
+/tmp/free-cc-0.s:16: Warning: .space repeat count is zero, ignored
+LINK_CRASH 20000412-2: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+PARSE_CRASH 20000412-5: /home/forrest/CLionProjects/free/test/torture/20000412-5.c:8:23: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20000412-5.c:8:25: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/20000412-5.c:8:25: error: expected ';', got token kind 0
+OTHER_CRASH 20000519-1: /home/forrest/CLionProjects/free/test/torture/20000519-1.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH 20000703-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x44): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+PARSE_CRASH 20000717-3: /home/forrest/CLionProjects/free/test/torture/20000717-3.c:6:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/20000717-3.c:7:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20000717-3.c:7:1: error: expected ';', got token kind 43
+PARSE_CRASH 20000722-1: /home/forrest/CLionProjects/free/test/torture/20000722-1.c:19:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20000722-1.c:19:23: error: expected ')', got token kind 3
+/home/forrest/CLionProjects/free/test/torture/20000722-1.c:19:23: error: expected ';', got token kind 3
+PARSE_CRASH 20000726-1: /home/forrest/CLionProjects/free/test/torture/20000726-1.c:31:6: error: expected ';', got token kind 73
+/home/forrest/CLionProjects/free/test/torture/20000726-1.c:33:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 20000808-1: /home/forrest/CLionProjects/free/test/torture/20000808-1.c:15:6: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20000808-1.c:16:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 20000815-1: /home/forrest/CLionProjects/free/test/torture/20000815-1.c:34:6: error: expected ';', got token kind 77
+/home/forrest/CLionProjects/free/test/torture/20000815-1.c:35:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 20000822-1: /home/forrest/CLionProjects/free/test/torture/20000822-1.c:15:3: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+OTHER_CRASH 20000910-1: /home/forrest/CLionProjects/free/test/torture/20000910-1.c:5:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH 20000910-2: /home/forrest/CLionProjects/free/test/torture/20000910-2.c:5:1: error: cannot find include file 'stdlib.h'
+PARSE_CRASH 20000914-1: /home/forrest/CLionProjects/free/test/torture/20000914-1.c:276:6: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20000914-1.c:277:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 20000917-1: /home/forrest/CLionProjects/free/test/torture/20000917-1.c:12:17: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20000917-1.c:12:19: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/20000917-1.c:12:27: error: expected ';', got token kind 44
+OTHER_CRASH 20001011-1: /tmp/free-cc-0.s: Assembler messages:
+Error: can't open /tmp/free-cc-0.s for reading: No such file or directory
+free-cc: assembly failed
+PARSE_CRASH 20001024-1: /home/forrest/CLionProjects/free/test/torture/20001024-1.c:6:38: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20001024-1.c:6:38: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20001024-1.c:18:44: error: expected ')', got token kind 2
+PARSE_CRASH 20001026-1: /home/forrest/CLionProjects/free/test/torture/20001026-1.c:28:6: error: expected ';', got token kind 82
+/home/forrest/CLionProjects/free/test/torture/20001026-1.c:29:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 20001101: /home/forrest/CLionProjects/free/test/torture/20001101.c:18:6: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20001101.c:21:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 20001111-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x198): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1e8): undefined reference to `__builtin_abort'
+PARSE_CRASH 20001121-1: /home/forrest/CLionProjects/free/test/torture/20001121-1.c:8:12: error: expected ';', got token kind 61
+free-cc: 1 error(s) generated
+PARSE_CRASH 20001130-1: /home/forrest/CLionProjects/free/test/torture/20001130-1.c:2:15: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+PARSE_CRASH 20001203-1: /home/forrest/CLionProjects/free/test/torture/20001203-1.c:14:14: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20001203-1.c:14:16: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/20001203-1.c:14:16: error: expected ';', got token kind 0
+PARSE_CRASH 20010114-1: /home/forrest/CLionProjects/free/test/torture/20010114-1.c:11:23: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20010114-1.c:11:25: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/20010114-1.c:11:25: error: expected ';', got token kind 0
+LINK_CRASH 20010119-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+PARSE_CRASH 20010122-1: /home/forrest/CLionProjects/free/test/torture/20010122-1.c:46:16: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20010122-1.c:85:17: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH 20010123-1: /home/forrest/CLionProjects/free/test/torture/20010123-1.c:15:34: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20010123-1.c:15:36: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/20010123-1.c:15:51: error: expected ';', got token kind 44
+PARSE_CRASH 20010209-1: /home/forrest/CLionProjects/free/test/torture/20010209-1.c:9:3: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+OTHER_CRASH 20010224-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x20): undefined reference to `main'
+PARSE_CRASH 20010325-1: /home/forrest/CLionProjects/free/test/torture/20010325-1.c:12:8: error: expected ')', got token kind 3
+/home/forrest/CLionProjects/free/test/torture/20010325-1.c:12:23: error: expected ';', got token kind 4
+/home/forrest/CLionProjects/free/test/torture/20010325-1.c:12:26: error: expected ';', got token kind 42
+OTHER_CRASH 20010329-1: /home/forrest/CLionProjects/free/test/torture/20010329-1.c:2:1: error: cannot find include file 'limits.h'
+PARSE_CRASH 20010409-1: /home/forrest/CLionProjects/free/test/torture/20010409-1.c:4:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20010409-1.c:5:15: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH 20010518-1: /tmp/free-cc-0.s: Assembler messages:
+Error: can't open /tmp/free-cc-0.s for reading: No such file or directory
+free-cc: assembly failed
+PARSE_CRASH 20010518-2: /home/forrest/CLionProjects/free/test/torture/20010518-2.c:34:18: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20010518-2.c:34:19: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/20010518-2.c:34:26: error: expected ';', got token kind 44
+OTHER_CRASH 20010604-1: /home/forrest/CLionProjects/free/test/torture/20010604-1.c:2:1: error: cannot find include file 'stdbool.h'
+PARSE_CRASH 20010605-1: /home/forrest/CLionProjects/free/test/torture/20010605-1.c:5:10: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/20010605-1.c:6:5: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 20010605-2: /home/forrest/CLionProjects/free/test/torture/20010605-2.c:6:15: error: expected ';', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/20010605-2.c:7:15: error: expected ';', got token kind 65
+/home/forrest/CLionProjects/free/test/torture/20010605-2.c:8:15: error: expected ';', got token kind 70
+LINK_CRASH 20010711-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+OTHER_CRASH 20010915-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `s':
+(.text+0x594): undefined reference to `__builtin_strcmp'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20011024-1: /home/forrest/CLionProjects/free/test/torture/20011024-1.c:4:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20011024-1.c:6:58: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20011024-1.c:6:58: error: expected ';', got token kind 2
+PARSE_CRASH 20011113-1: /home/forrest/CLionProjects/free/test/torture/20011113-1.c:1:23: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH 20011115-1: /home/forrest/CLionProjects/free/test/torture/20011115-1.c:3:15: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+OTHER_CRASH 20011121-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x5c): undefined reference to `__builtin_memcpy'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20020107-1: /home/forrest/CLionProjects/free/test/torture/20020107-1.c:17:8: error: expected ';', got token kind 56
+free-cc: 1 error(s) generated
+OTHER_CRASH 20020108-1: /home/forrest/CLionProjects/free/test/torture/20020108-1.c:4:1: error: cannot find include file 'limits.h'
+PARSE_CRASH 20020206-1: /home/forrest/CLionProjects/free/test/torture/20020206-1.c:10:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20020206-1.c:10:23: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/20020206-1.c:10:35: error: expected ';', got token kind 44
+PARSE_CRASH 20020206-2: /home/forrest/CLionProjects/free/test/torture/20020206-2.c:22:15: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20020206-2.c:22:67: error: expected ')', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/20020206-2.c:22:67: error: expected ')', got token kind 44
+PARSE_CRASH 20020215-1: /home/forrest/CLionProjects/free/test/torture/20020215-1.c:32:32: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20020215-1.c:32:34: error: expected ')', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/20020215-1.c:32:34: error: expected ';', got token kind 0
+OTHER_CRASH 20020226-1: /home/forrest/CLionProjects/free/test/torture/20020226-1.c:4:1: error: cannot find include file 'limits.h'
+PARSE_CRASH 20020227-1: /home/forrest/CLionProjects/free/test/torture/20020227-1.c:8:21: error: expected ';', got token kind 65
+/home/forrest/CLionProjects/free/test/torture/20020227-1.c:9:23: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH 20020314-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `g':
+(.text+0xa0): undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20020320-1: gen_addr: not an lvalue (kind=57)
+PARSE_CRASH 20020402-3: /home/forrest/CLionProjects/free/test/torture/20020402-3.c:73:32: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20020402-3.c:73:43: error: expected ';', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/20020402-3.c:80:3: error: expected ';', got token kind 72
+OTHER_CRASH 20020406-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `DUPFFexgcd':
+(.text+0x234): undefined reference to `__builtin_printf'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+PARSE_CRASH 20020411-1: /home/forrest/CLionProjects/free/test/torture/20020411-1.c:8:13: error: expected ';', got token kind 65
+free-cc: 1 error(s) generated
+OTHER_CRASH 20020412-1: /home/forrest/CLionProjects/free/test/torture/20020412-1.c:6:1: error: cannot find include file 'stdarg.h'
+LINK_CRASH 20020413-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+OTHER_CRASH 20020506-1: /home/forrest/CLionProjects/free/test/torture/20020506-1.c:9:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20020508-1: /home/forrest/CLionProjects/free/test/torture/20020508-1.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20020508-2: /home/forrest/CLionProjects/free/test/torture/20020508-2.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20020508-3: /home/forrest/CLionProjects/free/test/torture/20020508-3.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20020510-1: /home/forrest/CLionProjects/free/test/torture/20020510-1.c:9:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20020611-1: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:27: Error: symbol `n' is already defined
+free-cc: assembly failed
+OTHER_CRASH 20020614-1: /home/forrest/CLionProjects/free/test/torture/20020614-1.c:6:1: error: cannot find include file 'limits.h'
+PARSE_CRASH 20020615-1: /home/forrest/CLionProjects/free/test/torture/20020615-1.c:34:12: error: expected ';', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/20020615-1.c:34:12: error: expected expression, got token kind 37
+/home/forrest/CLionProjects/free/test/torture/20020615-1.c:34:14: error: expected ';', got token kind 2
+LINK_CRASH 20020619-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x2ff0): undefined reference to `.L.case.114'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: conditional branch to undefined symbol `.L.case.114' not allowed
+OTHER_CRASH 20020720-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x20): undefined reference to `fabs'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20021010-1: /home/forrest/CLionProjects/free/test/torture/20021010-1.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20021010-2: /home/forrest/CLionProjects/free/test/torture/20021010-2.c:4:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH 20021011-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x28): undefined reference to `__builtin_strcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x50): undefined reference to `__builtin_strcmp'
+OTHER_CRASH 20021113-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x4c): undefined reference to `__builtin_alloca'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20021120-1: arena_alloc: out of memory (67151400/67108864)
+OTHER_CRASH 20021120-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x58): undefined reference to `__builtin_sprintf'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20030221-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x68): undefined reference to `__builtin_strlen'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20030222-1: /home/forrest/CLionProjects/free/test/torture/20030222-1.c:8:1: error: cannot find include file 'limits.h'
+PARSE_CRASH 20030224-2: /home/forrest/CLionProjects/free/test/torture/20030224-2.c:19:5: error: expected expression, got token kind 38
+/home/forrest/CLionProjects/free/test/torture/20030224-2.c:19:6: error: expected '}', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20030224-2.c:19:6: error: expected ';', got token kind 2
+PARSE_CRASH 20030313-1: /home/forrest/CLionProjects/free/test/torture/20030313-1.c:9:15: error: expected ';', got token kind 77
+free-cc: 1 error(s) generated
+LINK_CRASH 20030330-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `usb_hub_port_wait_reset':
+(.text+0x54): undefined reference to `link_error'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20030403-1: /home/forrest/CLionProjects/free/test/torture/20030403-1.c:5:1: error: cannot find include file 'limits.h'
+PARSE_CRASH 20030408-1: /home/forrest/CLionProjects/free/test/torture/20030408-1.c:39:28: error: expected '}', got token kind 48
+/home/forrest/CLionProjects/free/test/torture/20030408-1.c:39:28: error: expected ';', got token kind 48
+/home/forrest/CLionProjects/free/test/torture/20030408-1.c:39:28: error: expected expression, got token kind 48
+PARSE_CRASH 20030501-1: /home/forrest/CLionProjects/free/test/torture/20030501-1.c:11:7: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+OTHER_CRASH 20030606-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xd8): undefined reference to `__builtin_memset'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1fc): undefined reference to `__builtin_memset'
+PARSE_CRASH 20030714-1: /home/forrest/CLionProjects/free/test/torture/20030714-1.c:7:15: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20030714-1.c:8:12: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20030714-1.c:9:12: error: expected ';', got token kind 2
+OTHER_CRASH 20030715-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x20): undefined reference to `main'
+OTHER_CRASH 20030717-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x33c): undefined reference to `__builtin_memset'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20030718-1: /home/forrest/CLionProjects/free/test/torture/20030718-1.c:5:15: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+PARSE_CRASH 20030910-1: /home/forrest/CLionProjects/free/test/torture/20030910-1.c:10:13: error: expected ';', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/20030910-1.c:11:25: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20030910-1.c:11:25: error: expected ';', got token kind 2
+OTHER_CRASH 20030916-1: /home/forrest/CLionProjects/free/test/torture/20030916-1.c:3:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20030928-1: /home/forrest/CLionProjects/free/test/torture/20030928-1.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20031003-1: /home/forrest/CLionProjects/free/test/torture/20031003-1.c:6:1: error: cannot find include file 'limits.h'
+PARSE_CRASH 20031010-1: /home/forrest/CLionProjects/free/test/torture/20031010-1.c:6:30: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20031010-1.c:6:30: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH 20031012-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0xa8): undefined reference to `__builtin_strlen'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20031020-1: /home/forrest/CLionProjects/free/test/torture/20031020-1.c:7:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20031204-1: /home/forrest/CLionProjects/free/test/torture/20031204-1.c:4:1: error: cannot find include file 'string.h'
+PARSE_CRASH 20040208-1: /home/forrest/CLionProjects/free/test/torture/20040208-1.c:8:10: error: expected ';', got token kind 1
+/home/forrest/CLionProjects/free/test/torture/20040208-1.c:8:12: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20040208-1.c:9:11: error: expected ';', got token kind 1
+LINK_CRASH 20040218-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+OTHER_CRASH 20040223-1: /home/forrest/CLionProjects/free/test/torture/20040223-1.c:3:1: error: cannot find include file 'string.h'
+LINK_CRASH 20040307-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+LINK_CRASH 20040313-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+OTHER_CRASH 20040409-1: /home/forrest/CLionProjects/free/test/torture/20040409-1.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20040409-1w: /home/forrest/CLionProjects/free/test/torture/20040409-1w.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20040409-2: /home/forrest/CLionProjects/free/test/torture/20040409-2.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20040409-2w: /home/forrest/CLionProjects/free/test/torture/20040409-2w.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20040409-3: /home/forrest/CLionProjects/free/test/torture/20040409-3.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20040409-3w: /home/forrest/CLionProjects/free/test/torture/20040409-3w.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20040411-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `sub1':
+(.text+0x68): undefined reference to `__builtin_memcpy'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20040423-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `sub1':
+(.text+0x68): undefined reference to `__builtin_memcpy'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20040520-1: /home/forrest/CLionProjects/free/test/torture/20040520-1.c:7:9: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH 20040625-1: /home/forrest/CLionProjects/free/test/torture/20040625-1.c:8:1: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH 20040629-1: arena_alloc: out of memory (67293600/67108864)
+PARSE_CRASH 20040703-1: /home/forrest/CLionProjects/free/test/torture/20040703-1.c:68:30: error: expected ';', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/20040703-1.c:68:30: error: expected expression, got token kind 37
+/home/forrest/CLionProjects/free/test/torture/20040703-1.c:68:32: error: expected ';', got token kind 2
+OTHER_CRASH 20040705-1: arena_alloc: out of memory (67299168/67108864)
+OTHER_CRASH 20040705-2: arena_alloc: out of memory (67299168/67108864)
+OTHER_CRASH 20040709-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `testA':
+(.text+0x3b4): undefined reference to `__builtin_classify_type'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `testB':
+PARSE_CRASH 20040709-2: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:15558: Warning: end of file not at end of a line; newline inserted
+/tmp/free-cc-0.s:15559: Error: expected an integer register or SVE vector register at operand 1 -- `lsr'
+OTHER_CRASH 20040709-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `testA':
+(.text+0x3cc): undefined reference to `__builtin_classify_type'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `testB':
+LINK_CRASH 20040811-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+OTHER_CRASH 20040823-1: /home/forrest/CLionProjects/free/test/torture/20040823-1.c:4:1: error: cannot find include file 'stdlib.h'
+LINK_CRASH 20040831-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+OTHER_CRASH 20041011-1: arena_alloc: out of memory (67166056/67108864)
+PARSE_CRASH 20041112-1: /home/forrest/CLionProjects/free/test/torture/20041112-1.c:6:23: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH 20041113-1: /home/forrest/CLionProjects/free/test/torture/20041113-1.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH 20041114-1: /home/forrest/CLionProjects/free/test/torture/20041114-1.c:8:1: error: cannot find include file 'limits.h'
+PARSE_CRASH 20041124-1: /home/forrest/CLionProjects/free/test/torture/20041124-1.c:4:21: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/20041124-1.c:10:22: error: member access on non-struct type
+free-cc: 2 error(s) generated
+PARSE_CRASH 20041201-1: /home/forrest/CLionProjects/free/test/torture/20041201-1.c:3:27: error: expected ';', got token kind 56
+/home/forrest/CLionProjects/free/test/torture/20041201-1.c:3:44: error: expected ';', got token kind 56
+/home/forrest/CLionProjects/free/test/torture/20041201-1.c:9:20: error: expected ';', got token kind 2
+OTHER_CRASH 20041210-1: /home/forrest/CLionProjects/free/test/torture/20041210-1.c:4:1: error: cannot find include file 'limits.h'
+PARSE_CRASH 20041214-1: /home/forrest/CLionProjects/free/test/torture/20041214-1.c:30:29: error: expected expression, got token kind 69
+/home/forrest/CLionProjects/free/test/torture/20041214-1.c:35:24: error: expected expression, got token kind 81
+/home/forrest/CLionProjects/free/test/torture/20041214-1.c:35:33: error: expected ')', got token kind 70
+OTHER_CRASH 20041218-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `baz':
+(.text+0x7c): undefined reference to `__builtin_memset'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20050106-1: /home/forrest/CLionProjects/free/test/torture/20050106-1.c:5:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+PARSE_CRASH 20050107-1: /home/forrest/CLionProjects/free/test/torture/20050107-1.c:6:35: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050107-1.c:7:35: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH 20050119-1: /home/forrest/CLionProjects/free/test/torture/20050119-1.c:5:39: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050119-1.c:6:39: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050119-1.c:7:39: error: expected ';', got token kind 2
+PARSE_CRASH 20050119-2: /home/forrest/CLionProjects/free/test/torture/20050119-2.c:5:39: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050119-2.c:6:39: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050119-2.c:7:39: error: expected ';', got token kind 2
+PARSE_CRASH 20050121-1: /home/forrest/CLionProjects/free/test/torture/20050121-1.c:30:4: error: expected ';', got token kind 65
+free-cc: 1 error(s) generated
+OTHER_CRASH 20050125-1: /home/forrest/CLionProjects/free/test/torture/20050125-1.c:5:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH 20050131-1: /home/forrest/CLionProjects/free/test/torture/20050131-1.c:4:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH 20050203-1: /home/forrest/CLionProjects/free/test/torture/20050203-1.c:4:1: error: cannot find include file 'stdlib.h'
+PARSE_CRASH 20050215-1: /home/forrest/CLionProjects/free/test/torture/20050215-1.c:8:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050215-1.c:16:38: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050215-1.c:16:38: error: expected ')', got token kind 2
+PARSE_CRASH 20050218-1: /home/forrest/CLionProjects/free/test/torture/20050218-1.c:2:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050218-1.c:3:15: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050218-1.c:4:60: error: expected ')', got token kind 2
+PARSE_CRASH 20050502-1: /home/forrest/CLionProjects/free/test/torture/20050502-1.c:22:37: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050502-1.c:22:37: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH 20050502-2: /home/forrest/CLionProjects/free/test/torture/20050502-2.c:2:23: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH 20050604-1: /home/forrest/CLionProjects/free/test/torture/20050604-1.c:29:19: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20050604-1.c:29:21: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/20050604-1.c:29:31: error: expected ';', got token kind 44
+PARSE_CRASH 20050613-1: /home/forrest/CLionProjects/free/test/torture/20050613-1.c:20:18: error: expected expression, got token kind 38
+/home/forrest/CLionProjects/free/test/torture/20050613-1.c:20:19: error: expected '}', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050613-1.c:20:19: error: expected ';', got token kind 2
+PARSE_CRASH 20050826-1: /home/forrest/CLionProjects/free/test/torture/20050826-1.c:11:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20050826-1.c:20:10: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH 20060930-2: /home/forrest/CLionProjects/free/test/torture/20060930-2.c:8:15: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+PARSE_CRASH 20061220-1: /home/forrest/CLionProjects/free/test/torture/20061220-1.c:11:3: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH 20070614-1: /home/forrest/CLionProjects/free/test/torture/20070614-1.c:3:10: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20070614-1.c:6:15: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20070614-1.c:6:15: error: expected ';', got token kind 2
+OTHER_CRASH 20070623-1: /home/forrest/CLionProjects/free/test/torture/20070623-1.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20070824-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x74): undefined reference to `__builtin_alloca'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20070919-1: /home/forrest/CLionProjects/free/test/torture/20070919-1.c:3:23: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH 20071018-1: /home/forrest/CLionProjects/free/test/torture/20071018-1.c:16:37: error: expected ')', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/20071018-1.c:16:47: error: expected ';', got token kind 42
+free-cc: 2 error(s) generated
+PARSE_CRASH 20071029-1: /home/forrest/CLionProjects/free/test/torture/20071029-1.c:36:11: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20071029-1.c:36:13: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20071029-1.c:36:49: error: expected ';', got token kind 44
+LINK_CRASH 20071030-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+OTHER_CRASH 20071108-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `test':
+(.text+0xb8): undefined reference to `__builtin_memset'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20071120-1: /home/forrest/CLionProjects/free/test/torture/20071120-1.c:25:19: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20071120-1.c:49:31: error: expected ';', got token kind 7
+free-cc: 2 error(s) generated
+PARSE_CRASH 20071202-1: /home/forrest/CLionProjects/free/test/torture/20071202-1.c:8:19: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20071202-1.c:8:21: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20071202-1.c:8:33: error: expected expression, got token kind 43
+LINK_CRASH 20071205-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+OTHER_CRASH 20071213-1: /home/forrest/CLionProjects/free/test/torture/20071213-1.c:4:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH 20071219-1: /home/forrest/CLionProjects/free/test/torture/20071219-1.c:4:52: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20071219-1.c:4:52: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH 20071220-1: /home/forrest/CLionProjects/free/test/torture/20071220-1.c:8:1: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH 20071220-2: /home/forrest/CLionProjects/free/test/torture/20071220-2.c:7:1: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH 20080424-1: /home/forrest/CLionProjects/free/test/torture/20080424-1.c:15:15: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+OTHER_CRASH 20080502-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x18): undefined reference to `__builtin_signbit'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20080506-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x20): undefined reference to `main'
+PARSE_CRASH 20080506-2: /home/forrest/CLionProjects/free/test/torture/20080506-2.c:6:23: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20080506-2.c:6:23: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH 20080719-1: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:16: Warning: .space repeat count is zero, ignored
+/tmp/free-cc-0.s:22: Warning: .space repeat count is zero, ignored
+OTHER_CRASH 20081103-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x3c): undefined reference to `__builtin_memcmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x48): undefined reference to `__builtin_abort'
+OTHER_CRASH 20081112-1: /home/forrest/CLionProjects/free/test/torture/20081112-1.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 20081218-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x2c): undefined reference to `__builtin_memset'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+PARSE_CRASH 20090113-1: /home/forrest/CLionProjects/free/test/torture/20090113-1.c:56:41: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20090113-1.c:56:43: error: expected '}', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20090113-1.c:56:43: error: expected ';', got token kind 43
+PARSE_CRASH 20090113-2: /home/forrest/CLionProjects/free/test/torture/20090113-2.c:89:19: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/20090113-2.c:155:52: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/20090113-2.c:155:54: error: expected '}', got token kind 0
+PARSE_CRASH 20090113-3: /home/forrest/CLionProjects/free/test/torture/20090113-3.c:72:50: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+PARSE_CRASH 20090219-1: /home/forrest/CLionProjects/free/test/torture/20090219-1.c:13:5: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH 20090623-1: /home/forrest/CLionProjects/free/test/torture/20090623-1.c:1:20: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH 20100430-1: timeout: failed to execute process: Permission denied (os error 13)
+OTHER_CRASH 20101011-1: /home/forrest/CLionProjects/free/test/torture/20101011-1.c:79:1: error: cannot find include file 'signal.h'
+PARSE_CRASH 20101013-1: /home/forrest/CLionProjects/free/test/torture/20101013-1.c:5:37: error: expected ')', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/20101013-1.c:5:46: error: expected ';', got token kind 42
+free-cc: 2 error(s) generated
+OTHER_CRASH 20110418-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x274): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20111208-1: /home/forrest/CLionProjects/free/test/torture/20111208-1.c:4:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20111208-1.c:6:39: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20111208-1.c:6:39: error: expected ';', got token kind 2
+OTHER_CRASH 20111212-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `frob_entry':
+(.text+0x34): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xa4): undefined reference to `__builtin_memcpy'
+OTHER_CRASH 20120105-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `extract':
+(.text+0x34): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH 20120111-1: /home/forrest/CLionProjects/free/test/torture/20120111-1.c:2:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH 20121108-1: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:15: Warning: .space repeat count is zero, ignored
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `strtoul1':
+OTHER_CRASH 20140212-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa4): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xcc): undefined reference to `__builtin_abort'
+OTHER_CRASH 20140622-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa8): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xd0): undefined reference to `__builtin_abort'
+OTHER_CRASH 20140828-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x140): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x168): undefined reference to `__builtin_abort'
+OTHER_CRASH 20141022-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x108): undefined reference to `__builtin_printf'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x10c): undefined reference to `__builtin_abort'
+PARSE_CRASH 20141107-1: /home/forrest/CLionProjects/free/test/torture/20141107-1.c:3:6: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20141107-1.c:4:6: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH 20141125-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x88): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xb4): undefined reference to `__builtin_abort'
+PARSE_CRASH 20170401-2: /home/forrest/CLionProjects/free/test/torture/20170401-2.c:29:6: error: expected ';', got token kind 73
+/home/forrest/CLionProjects/free/test/torture/20170401-2.c:31:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 20170419-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x138): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20171008-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x13c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20180112-1: /home/forrest/CLionProjects/free/test/torture/20180112-1.c:6:25: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20180112-1.c:8:5: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20180112-1.c:9:5: error: expected ';', got token kind 2
+PARSE_CRASH 20180131-1: /home/forrest/CLionProjects/free/test/torture/20180131-1.c:22:11: error: expected expression, got token kind 38
+/home/forrest/CLionProjects/free/test/torture/20180131-1.c:22:12: error: expected '}', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/20180131-1.c:22:12: error: expected ';', got token kind 2
+PARSE_CRASH 20180921-1: /home/forrest/CLionProjects/free/test/torture/20180921-1.c:19:3: error: expected ';', got token kind 76
+/home/forrest/CLionProjects/free/test/torture/20180921-1.c:36:11: error: member access on non-struct type
+free-cc: 2 error(s) generated
+OTHER_CRASH 20181120-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x120): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20190228-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20190820-1: /home/forrest/CLionProjects/free/test/torture/20190820-1.c:7:20: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/20190820-1.c:9:20: error: expected ';', got token kind 70
+/home/forrest/CLionProjects/free/test/torture/20190820-1.c:12:15: error: expected ';', got token kind 2
+OTHER_CRASH 20190901-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xfc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20191023-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `error':
+(.text+0x8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20210505-1: /home/forrest/CLionProjects/free/test/torture/20210505-1.c:7:1: error: cannot find include file 'setjmp.h'
+OTHER_CRASH 20230509-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x148): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x180): undefined reference to `__builtin_abort'
+PARSE_CRASH 20230510-1: /home/forrest/CLionProjects/free/test/torture/20230510-1.c:9:29: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH 20230630-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x10c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 20230630-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x10c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 20230630-3: /home/forrest/CLionProjects/free/test/torture/20230630-3.c:2:18: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH 20230630-4: /home/forrest/CLionProjects/free/test/torture/20230630-4.c:8:18: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH 20241029-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x1c): undefined reference to `__builtin_puts'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 920202-1: timeout: failed to execute process: Permission denied (os error 13)
+PARSE_CRASH 920302-1: /home/forrest/CLionProjects/free/test/torture/920302-1.c:10:6: error: expected ';', got token kind 71
+/home/forrest/CLionProjects/free/test/torture/920302-1.c:11:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 920411-1: /home/forrest/CLionProjects/free/test/torture/920411-1.c:4:6: error: expected ';', got token kind 56
+/home/forrest/CLionProjects/free/test/torture/920411-1.c:5:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 920415-1: /home/forrest/CLionProjects/free/test/torture/920415-1.c:3:28: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH 920428-2: /home/forrest/CLionProjects/free/test/torture/920428-2.c:5:39: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH 920501-2: /home/forrest/CLionProjects/free/test/torture/920501-2.c:52:6: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/920501-2.c:56:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 920501-3: /home/forrest/CLionProjects/free/test/torture/920501-3.c:9:6: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/920501-3.c:10:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 920501-6: /home/forrest/CLionProjects/free/test/torture/920501-6.c:2:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH 920501-7: /home/forrest/CLionProjects/free/test/torture/920501-7.c:16:5: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+OTHER_CRASH 920501-8: /home/forrest/CLionProjects/free/test/torture/920501-8.c:7:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH 920501-9: /home/forrest/CLionProjects/free/test/torture/920501-9.c:4:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH 920604-1: /home/forrest/CLionProjects/free/test/torture/920604-1.c:5:6: error: expected ';', got token kind 70
+/home/forrest/CLionProjects/free/test/torture/920604-1.c:6:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 920612-1: /home/forrest/CLionProjects/free/test/torture/920612-1.c:6:9: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/920612-1.c:6:15: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 920612-2: /home/forrest/CLionProjects/free/test/torture/920612-2.c:11:5: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+OTHER_CRASH 920625-1: /home/forrest/CLionProjects/free/test/torture/920625-1.c:2:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH 920721-3: /home/forrest/CLionProjects/free/test/torture/920721-3.c:2:15: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH 920721-4: /home/forrest/CLionProjects/free/test/torture/920721-4.c:9:29: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+OTHER_CRASH 920726-1: /home/forrest/CLionProjects/free/test/torture/920726-1.c:2:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH 920730-1: /home/forrest/CLionProjects/free/test/torture/920730-1.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH 920810-1: /home/forrest/CLionProjects/free/test/torture/920810-1.c:2:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH 920908-1: /home/forrest/CLionProjects/free/test/torture/920908-1.c:4:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH 920922-1: /home/forrest/CLionProjects/free/test/torture/920922-1.c:5:5: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/920922-1.c:6:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 921006-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x2c): undefined reference to `__builtin_strcmp'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH 921007-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x4c): undefined reference to `__builtin_strcmp'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 921013-1: /home/forrest/CLionProjects/free/test/torture/921013-1.c:3:1: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/921013-1.c:6:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 921017-1: /home/forrest/CLionProjects/free/test/torture/921017-1.c:8:5: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+LINK_CRASH 921110-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+PARSE_CRASH 921112-1: /home/forrest/CLionProjects/free/test/torture/921112-1.c:11:6: error: expected ';', got token kind 80
+/home/forrest/CLionProjects/free/test/torture/921112-1.c:12:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 921117-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `check':
+(.text+0x5c): undefined reference to `__builtin_strcmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+PARSE_CRASH 921124-1: /home/forrest/CLionProjects/free/test/torture/921124-1.c:4:4: error: expected ';', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/921124-1.c:5:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/921124-1.c:12:1: error: expected ';', got token kind 43
+PARSE_CRASH 921204-1: /home/forrest/CLionProjects/free/test/torture/921204-1.c:28:16: error: expected ';', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/921204-1.c:28:16: error: expected expression, got token kind 37
+/home/forrest/CLionProjects/free/test/torture/921204-1.c:29:5: error: expected ';', got token kind 2
+PARSE_CRASH 921215-1: /home/forrest/CLionProjects/free/test/torture/921215-1.c:7:5: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/921215-1.c:9:2: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/921215-1.c:17:5: error: expected ';', got token kind 43
+OTHER_CRASH 930406-1: gen_expr: unknown node kind 26
+OTHER_CRASH 930513-1: /home/forrest/CLionProjects/free/test/torture/930513-1.c:5:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH 930513-2: /home/forrest/CLionProjects/free/test/torture/930513-2.c:4:6: error: expected ';', got token kind 57
+/home/forrest/CLionProjects/free/test/torture/930513-2.c:5:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 930518-1: /home/forrest/CLionProjects/free/test/torture/930518-1.c:6:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/930518-1.c:7:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 930526-1: /home/forrest/CLionProjects/free/test/torture/930526-1.c:5:8: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+PARSE_CRASH 930603-1: /home/forrest/CLionProjects/free/test/torture/930603-1.c:4:6: error: expected ';', got token kind 65
+/home/forrest/CLionProjects/free/test/torture/930603-1.c:5:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 930603-3: /home/forrest/CLionProjects/free/test/torture/930603-3.c:4:6: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/930603-3.c:6:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 930630-1: /home/forrest/CLionProjects/free/test/torture/930630-1.c:25:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/930630-1.c:26:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 930702-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xd0): undefined reference to `f'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 930713-1: /home/forrest/CLionProjects/free/test/torture/930713-1.c:9:6: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/930713-1.c:10:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 930718-1: /home/forrest/CLionProjects/free/test/torture/930718-1.c:11:6: error: expected ';', got token kind 71
+/home/forrest/CLionProjects/free/test/torture/930718-1.c:12:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 930725-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa0): undefined reference to `__builtin_strcmp'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH 930916-1: /home/forrest/CLionProjects/free/test/torture/930916-1.c:4:6: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/930916-1.c:5:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 930921-1: /home/forrest/CLionProjects/free/test/torture/930921-1.c:4:6: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/930921-1.c:5:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 930929-1: /home/forrest/CLionProjects/free/test/torture/930929-1.c:4:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/930929-1.c:5:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/930929-1.c:11:1: error: expected ';', got token kind 43
+PARSE_CRASH 930930-1: /home/forrest/CLionProjects/free/test/torture/930930-1.c:3:40: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/930930-1.c:4:7: error: expected ';', got token kind 7
+/home/forrest/CLionProjects/free/test/torture/930930-1.c:5:7: error: expected ';', got token kind 7
+PARSE_CRASH 931002-1: /home/forrest/CLionProjects/free/test/torture/931002-1.c:15:5: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/931002-1.c:19:5: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/931002-1.c:24:5: error: expected ';', got token kind 43
+OTHER_CRASH 931004-10: /home/forrest/CLionProjects/free/test/torture/931004-10.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH 931004-12: /home/forrest/CLionProjects/free/test/torture/931004-12.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH 931004-14: /home/forrest/CLionProjects/free/test/torture/931004-14.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH 931004-2: /home/forrest/CLionProjects/free/test/torture/931004-2.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH 931004-4: /home/forrest/CLionProjects/free/test/torture/931004-4.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH 931004-6: /home/forrest/CLionProjects/free/test/torture/931004-6.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH 931004-8: /home/forrest/CLionProjects/free/test/torture/931004-8.c:2:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH 931005-1: /home/forrest/CLionProjects/free/test/torture/931005-1.c:11:6: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/931005-1.c:12:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 931009-1: /home/forrest/CLionProjects/free/test/torture/931009-1.c:10:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/931009-1.c:11:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 931017-1: /home/forrest/CLionProjects/free/test/torture/931017-1.c:17:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/931017-1.c:18:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/931017-1.c:26:1: error: expected ';', got token kind 43
+PARSE_CRASH 931018-1: /home/forrest/CLionProjects/free/test/torture/931018-1.c:14:6: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/931018-1.c:15:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 931031-1: /home/forrest/CLionProjects/free/test/torture/931031-1.c:20:6: error: expected ';', got token kind 77
+/home/forrest/CLionProjects/free/test/torture/931031-1.c:21:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 931102-1: /home/forrest/CLionProjects/free/test/torture/931102-1.c:11:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/931102-1.c:12:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 931102-2: /home/forrest/CLionProjects/free/test/torture/931102-2.c:13:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/931102-2.c:14:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 940115-1: /home/forrest/CLionProjects/free/test/torture/940115-1.c:3:6: error: expected ';', got token kind 56
+/home/forrest/CLionProjects/free/test/torture/940115-1.c:5:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 940122-1: /home/forrest/CLionProjects/free/test/torture/940122-1.c:7:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/940122-1.c:8:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/940122-1.c:15:1: error: expected ';', got token kind 43
+OTHER_CRASH 941014-2: /home/forrest/CLionProjects/free/test/torture/941014-2.c:2:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH 941015-1: /home/forrest/CLionProjects/free/test/torture/941015-1.c:6:6: error: expected ';', got token kind 70
+/home/forrest/CLionProjects/free/test/torture/941015-1.c:7:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/941015-1.c:19:1: error: expected ';', got token kind 43
+PARSE_CRASH 941021-1: /home/forrest/CLionProjects/free/test/torture/941021-1.c:8:6: error: expected ';', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/941021-1.c:10:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 941025-1: /home/forrest/CLionProjects/free/test/torture/941025-1.c:5:6: error: expected ';', got token kind 70
+/home/forrest/CLionProjects/free/test/torture/941025-1.c:6:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 941202-1: /home/forrest/CLionProjects/free/test/torture/941202-1.c:9:1: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH 950221-1: /home/forrest/CLionProjects/free/test/torture/950221-1.c:22:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/950221-1.c:24:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/950221-1.c:30:1: error: expected ';', got token kind 43
+PARSE_CRASH 950605-1: /home/forrest/CLionProjects/free/test/torture/950605-1.c:4:5: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/950605-1.c:5:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 950607-1: timeout: failed to execute process: Permission denied (os error 13)
+OTHER_CRASH 950628-1: gen_addr: not an lvalue (kind=31)
+PARSE_CRASH 960116-1: /home/forrest/CLionProjects/free/test/torture/960116-1.c:4:15: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+PARSE_CRASH 960209-1: /home/forrest/CLionProjects/free/test/torture/960209-1.c:15:6: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/960209-1.c:17:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 960311-1: /home/forrest/CLionProjects/free/test/torture/960311-1.c:2:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH 960311-2: /home/forrest/CLionProjects/free/test/torture/960311-2.c:2:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH 960311-3: /home/forrest/CLionProjects/free/test/torture/960311-3.c:2:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH 960327-1: /home/forrest/CLionProjects/free/test/torture/960327-1.c:2:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH 960419-1: /home/forrest/CLionProjects/free/test/torture/960419-1.c:8:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/960419-1.c:9:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 960512-1: /home/forrest/CLionProjects/free/test/torture/960512-1.c:5:1: error: expected ';', got token kind 61
+free-cc: 1 error(s) generated
+PARSE_CRASH 960513-1: /home/forrest/CLionProjects/free/test/torture/960513-1.c:6:6: error: expected ';', got token kind 70
+/home/forrest/CLionProjects/free/test/torture/960513-1.c:8:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 960521-1: /home/forrest/CLionProjects/free/test/torture/960521-1.c:4:1: error: cannot find include file 'stdlib.h'
+PARSE_CRASH 960608-1: /home/forrest/CLionProjects/free/test/torture/960608-1.c:15:6: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/960608-1.c:16:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 960909-1: /home/forrest/CLionProjects/free/test/torture/960909-1.c:6:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/960909-1.c:7:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/960909-1.c:22:1: error: expected ';', got token kind 43
+PARSE_CRASH 961026-1: /home/forrest/CLionProjects/free/test/torture/961026-1.c:6:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/961026-1.c:7:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 961223-1: /home/forrest/CLionProjects/free/test/torture/961223-1.c:10:8: error: expected ';', got token kind 77
+free-cc: 1 error(s) generated
+PARSE_CRASH 970214-1: /home/forrest/CLionProjects/free/test/torture/970214-1.c:7:10: error: expected ')', got token kind 4
+/home/forrest/CLionProjects/free/test/torture/970214-1.c:7:10: error: expected ';', got token kind 4
+/home/forrest/CLionProjects/free/test/torture/970214-1.c:7:18: error: expected ';', got token kind 4
+PARSE_CRASH 970214-2: /home/forrest/CLionProjects/free/test/torture/970214-2.c:3:16: error: expected ')', got token kind 4
+/home/forrest/CLionProjects/free/test/torture/970214-2.c:3:16: error: expected ')', got token kind 4
+/home/forrest/CLionProjects/free/test/torture/970214-2.c:3:16: error: expected ';', got token kind 4
+PARSE_CRASH 970923-1: /home/forrest/CLionProjects/free/test/torture/970923-1.c:6:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/970923-1.c:7:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/970923-1.c:17:1: error: expected ';', got token kind 43
+OTHER_CRASH 980205: /home/forrest/CLionProjects/free/test/torture/980205.c:2:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH 980506-1: /home/forrest/CLionProjects/free/test/torture/980506-1.c:12:6: error: expected ';', got token kind 71
+/home/forrest/CLionProjects/free/test/torture/980506-1.c:13:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 980506-3: /home/forrest/CLionProjects/free/test/torture/980506-3.c:8:6: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/980506-3.c:9:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/980506-3.c:21:1: error: expected ';', got token kind 43
+PARSE_CRASH 980526-2: /home/forrest/CLionProjects/free/test/torture/980526-2.c:7:15: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH 980526-3: /home/forrest/CLionProjects/free/test/torture/980526-3.c:5:1: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/980526-3.c:7:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH 980605-1: /home/forrest/CLionProjects/free/test/torture/980605-1.c:4:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH 980608-1: /home/forrest/CLionProjects/free/test/torture/980608-1.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH 980707-1: /home/forrest/CLionProjects/free/test/torture/980707-1.c:2:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH 980716-1: /home/forrest/CLionProjects/free/test/torture/980716-1.c:2:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH 981130-1: /home/forrest/CLionProjects/free/test/torture/981130-1.c:10:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/981130-1.c:12:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 990106-1: /home/forrest/CLionProjects/free/test/torture/990106-1.c:4:1: error: expected ';', got token kind 56
+/home/forrest/CLionProjects/free/test/torture/990106-1.c:5:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH 990208-1: /home/forrest/CLionProjects/free/test/torture/990208-1.c:13:19: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+OTHER_CRASH 990513-1: /home/forrest/CLionProjects/free/test/torture/990513-1.c:2:1: error: cannot find include file 'string.h'
+LINK_CRASH 990604-1: /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find /tmp/free-cc-1.o: No such file or directory
+collect2: error: ld returned 1 exit status
+free-cc: linking failed
+OTHER_CRASH 990628-1: /home/forrest/CLionProjects/free/test/torture/990628-1.c:2:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH 990804-1: /tmp/free-cc-0.s: Assembler messages:
+Error: can't open /tmp/free-cc-0.s for reading: No such file or directory
+free-cc: assembly failed
+OTHER_CRASH 990811-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x20): undefined reference to `main'
+OTHER_CRASH 990826-0: /home/forrest/CLionProjects/free/test/torture/990826-0.c:12:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH 991014-1: /home/forrest/CLionProjects/free/test/torture/991014-1.c:1:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/991014-1.c:25:8: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH 991030-1: /home/forrest/CLionProjects/free/test/torture/991030-1.c:4:16: error: member access on non-struct type
+free-cc: 1 error(s) generated
+OTHER_CRASH 991216-2: /home/forrest/CLionProjects/free/test/torture/991216-2.c:2:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH 991228-1: /home/forrest/CLionProjects/free/test/torture/991228-1.c:4:52: error: expected expression, got token kind 48
+/home/forrest/CLionProjects/free/test/torture/991228-1.c:15:54: error: expected '}', got token kind 48
+/home/forrest/CLionProjects/free/test/torture/991228-1.c:15:54: error: expected ';', got token kind 48
+OTHER_CRASH alias-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x78): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+LINK_CRASH alias-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x18): undefined reference to `b'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol `b' which may bind externally can not be used when making a shared object; recompile with -fPIC
+LINK_CRASH alias-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `inc':
+(.text+0x8): undefined reference to `b'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol `b' which may bind externally can not be used when making a shared object; recompile with -fPIC
+PARSE_CRASH alias-4: /home/forrest/CLionProjects/free/test/torture/alias-4.c:12:11: error: expected ';', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/alias-4.c:12:11: error: expected expression, got token kind 37
+/home/forrest/CLionProjects/free/test/torture/alias-4.c:12:13: error: expected ';', got token kind 2
+OTHER_CRASH alias-access-path-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x98): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH align-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x2c): undefined reference to `__alignof__'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH alloca-1: /home/forrest/CLionProjects/free/test/torture/alloca-1.c:5:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/alloca-1.c:11:7: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH anon-1: /home/forrest/CLionProjects/free/test/torture/anon-1.c:27:11: error: no member 'b' in struct/union
+free-cc: 1 error(s) generated
+OTHER_CRASH ashldi-1: /home/forrest/CLionProjects/free/test/torture/ashldi-1.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH ashrdi-1: /home/forrest/CLionProjects/free/test/torture/ashrdi-1.c:2:1: error: cannot find include file 'limits.h'
+PARSE_CRASH bcp-1: /home/forrest/CLionProjects/free/test/torture/bcp-1.c:12:8: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+PARSE_CRASH bf-pack-1: /home/forrest/CLionProjects/free/test/torture/bf-pack-1.c:7:26: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH bitfld-1: /home/forrest/CLionProjects/free/test/torture/bitfld-1.c:29:13: error: expected ';', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/bitfld-1.c:29:13: error: expected expression, got token kind 37
+/home/forrest/CLionProjects/free/test/torture/bitfld-1.c:29:15: error: expected ';', got token kind 2
+OTHER_CRASH bitfld-10: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x110): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH bitfld-8: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x15c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1e8): undefined reference to `__builtin_abort'
+OTHER_CRASH bitfld-9: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x15c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1e0): undefined reference to `__builtin_abort'
+OTHER_CRASH bswap-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x26c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x298): undefined reference to `__builtin_abort'
+PARSE_CRASH bswap-2: /home/forrest/CLionProjects/free/test/torture/bswap-2.c:6:25: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/bswap-2.c:32:1: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH built-in-setjmp: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `sub2':
+(.text+0x20): undefined reference to `__builtin_longjmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH builtin-bitops-1: /home/forrest/CLionProjects/free/test/torture/builtin-bitops-1.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH builtin-prefetch-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `good_const':
+(.text+0x34): undefined reference to `__builtin_prefetch'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x5c): undefined reference to `__builtin_prefetch'
+OTHER_CRASH builtin-prefetch-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `simple_global':
+(.text+0x2c): undefined reference to `__builtin_prefetch'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x58): undefined reference to `__builtin_prefetch'
+OTHER_CRASH builtin-prefetch-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `simple_vol_global':
+(.text+0x2c): undefined reference to `__builtin_prefetch'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x58): undefined reference to `__builtin_prefetch'
+OTHER_CRASH builtin-prefetch-4: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `assign_arg_ptr':
+(.text+0x44): undefined reference to `__builtin_prefetch'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `assign_glob_ptr':
+OTHER_CRASH builtin-prefetch-5: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `arg_ptr':
+(.text+0x34): undefined reference to `__builtin_prefetch'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `arg_idx':
+OTHER_CRASH builtin-prefetch-6: /home/forrest/CLionProjects/free/test/torture/builtin-prefetch-6.c:6:1: error: cannot find include file 'limits.h'
+OTHER_CRASH call-trap-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x40): undefined reference to `null'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH cbrt: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:671: Error: symbol `.LF0' is already defined
+/tmp/free-cc-0.s:674: Error: symbol `.LF1' is already defined
+PARSE_CRASH cmpdi-1: /home/forrest/CLionProjects/free/test/torture/cmpdi-1.c:7:6: error: expected ';', got token kind 70
+/home/forrest/CLionProjects/free/test/torture/cmpdi-1.c:9:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/cmpdi-1.c:19:1: error: expected ';', got token kind 43
+OTHER_CRASH cmpsf-1: /home/forrest/CLionProjects/free/test/torture/cmpsf-1.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH cmpsi-2: arena_alloc: out of memory (67335472/67108864)
+OTHER_CRASH comp-goto-1: /home/forrest/CLionProjects/free/test/torture/comp-goto-1.c:6:1: error: cannot find include file 'stdlib.h'
+PARSE_CRASH comp-goto-2: /home/forrest/CLionProjects/free/test/torture/comp-goto-2.c:18:5: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH complex-1: /home/forrest/CLionProjects/free/test/torture/complex-1.c:22:13: error: expected ';', got token kind 61
+free-cc: 1 error(s) generated
+PARSE_CRASH complex-2: /home/forrest/CLionProjects/free/test/torture/complex-2.c:4:13: error: expected ';', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/complex-2.c:12:13: error: expected ';', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/complex-2.c:17:15: error: expected ';', got token kind 61
+PARSE_CRASH complex-4: /home/forrest/CLionProjects/free/test/torture/complex-4.c:7:20: error: expected ')', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/complex-4.c:7:20: error: expected ')', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/complex-4.c:7:26: error: expected ';', got token kind 42
+PARSE_CRASH complex-5: /home/forrest/CLionProjects/free/test/torture/complex-5.c:5:1: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/complex-5.c:11:20: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/complex-5.c:12:20: error: expected ';', got token kind 2
+OTHER_CRASH complex-6: /home/forrest/CLionProjects/free/test/torture/complex-6.c:7:1: error: cannot find include file 'stdlib.h'
+PARSE_CRASH complex-7: /home/forrest/CLionProjects/free/test/torture/complex-7.c:5:19: error: expected ';', got token kind 65
+/home/forrest/CLionProjects/free/test/torture/complex-7.c:6:19: error: expected ';', got token kind 65
+/home/forrest/CLionProjects/free/test/torture/complex-7.c:7:19: error: expected ';', got token kind 65
+PARSE_CRASH compndlit-1: /home/forrest/CLionProjects/free/test/torture/compndlit-1.c:24:18: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/compndlit-1.c:24:19: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/compndlit-1.c:24:25: error: expected ';', got token kind 48
+OTHER_CRASH const-addr-expr-1: /home/forrest/CLionProjects/free/test/torture/const-addr-expr-1.c:2:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH conversion: /home/forrest/CLionProjects/free/test/torture/conversion.c:16:6: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/conversion.c:17:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/conversion.c:24:1: error: expected ';', got token kind 43
+PARSE_CRASH cvt-1: /home/forrest/CLionProjects/free/test/torture/cvt-1.c:4:15: error: expected ';', got token kind 70
+free-cc: 1 error(s) generated
+PARSE_CRASH dbra-1: /home/forrest/CLionProjects/free/test/torture/dbra-1.c:4:6: error: expected ';', got token kind 70
+/home/forrest/CLionProjects/free/test/torture/dbra-1.c:5:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/dbra-1.c:17:1: error: expected ';', got token kind 43
+OTHER_CRASH doloop-1: /home/forrest/CLionProjects/free/test/torture/doloop-1.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH doloop-2: /home/forrest/CLionProjects/free/test/torture/doloop-2.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH enum-3: /home/forrest/CLionProjects/free/test/torture/enum-3.c:6:1: error: cannot find include file 'limits.h'
+PARSE_CRASH ffs-1: /home/forrest/CLionProjects/free/test/torture/ffs-1.c:1:12: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+PARSE_CRASH ffs-2: /home/forrest/CLionProjects/free/test/torture/ffs-2.c:10:5: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/ffs-2.c:11:5: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH fprintf-1: /home/forrest/CLionProjects/free/test/torture/fprintf-1.c:4:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH fprintf-chk-1: /home/forrest/CLionProjects/free/test/torture/fprintf-chk-1.c:4:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH frame-address: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1f4): undefined reference to `__builtin_alloca'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH gofast: /home/forrest/CLionProjects/free/test/torture/gofast.c:10:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH inst-check: /home/forrest/CLionProjects/free/test/torture/inst-check.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH int-compare: /home/forrest/CLionProjects/free/test/torture/int-compare.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH loop-2b: /home/forrest/CLionProjects/free/test/torture/loop-2b.c:2:1: error: cannot find include file 'limits.h'
+PARSE_CRASH loop-2c: /home/forrest/CLionProjects/free/test/torture/loop-2c.c:8:12: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+PARSE_CRASH loop-2e: /home/forrest/CLionProjects/free/test/torture/loop-2e.c:16:17: error: expected ';', got token kind 2
+<builtin>:0:0: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/loop-2e.c:21:3: error: expected expression, got token kind 62
+OTHER_CRASH loop-2f: /home/forrest/CLionProjects/free/test/torture/loop-2f.c:5:1: error: cannot find include file 'limits.h'
+OTHER_CRASH loop-2g: /home/forrest/CLionProjects/free/test/torture/loop-2g.c:5:1: error: cannot find include file 'limits.h'
+OTHER_CRASH loop-3: /home/forrest/CLionProjects/free/test/torture/loop-3.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH loop-3b: /home/forrest/CLionProjects/free/test/torture/loop-3b.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH loop-3c: /home/forrest/CLionProjects/free/test/torture/loop-3c.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH loop-5: /tmp/free-cc-0.s: Assembler messages:
+Error: can't open /tmp/free-cc-0.s for reading: No such file or directory
+free-cc: assembly failed
+OTHER_CRASH lshrdi-1: /home/forrest/CLionProjects/free/test/torture/lshrdi-1.c:2:1: error: cannot find include file 'limits.h'
+OTHER_CRASH lto-tbaa-1: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:39: Error: symbol `b' is already defined
+free-cc: assembly failed
+OTHER_CRASH mayalias-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x88): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH mayalias-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xd8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+LINK_CRASH medce-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x60): undefined reference to `link_error'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH memchr-1: /home/forrest/CLionProjects/free/test/torture/memchr-1.c:5:24: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/memchr-1.c:6:24: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/memchr-1.c:141:19: error: expected ')', got token kind 0
+OTHER_CRASH memclr: arena_alloc: out of memory (67234264/67108864)
+OTHER_CRASH memcpy-1: /home/forrest/CLionProjects/free/test/torture/memcpy-1.c:4:1: error: cannot find include file 'string.h'
+OTHER_CRASH memcpy-2: /home/forrest/CLionProjects/free/test/torture/memcpy-2.c:9:1: error: cannot find include file 'string.h'
+OTHER_CRASH memcpy-bi: /home/forrest/CLionProjects/free/test/torture/memcpy-bi.c:3:1: error: cannot find include file 'string.h'
+OTHER_CRASH memset-1: /home/forrest/CLionProjects/free/test/torture/memset-1.c:9:1: error: cannot find include file 'string.h'
+OTHER_CRASH memset-2: /home/forrest/CLionProjects/free/test/torture/memset-2.c:9:1: error: cannot find include file 'string.h'
+OTHER_CRASH memset-3: /home/forrest/CLionProjects/free/test/torture/memset-3.c:9:1: error: cannot find include file 'string.h'
+OTHER_CRASH memset-4: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `f':
+(.text+0x34): undefined reference to `__builtin_memset'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+PARSE_CRASH misalign: /home/forrest/CLionProjects/free/test/torture/misalign.c:8:30: error: expected ';', got token kind 50
+arena_alloc: out of memory (67308384/67108864)
+OTHER_CRASH mode-dependent-address: /home/forrest/CLionProjects/free/test/torture/mode-dependent-address.c:4:1: error: cannot find include file 'stdint.h'
+PARSE_CRASH mul-sext: /home/forrest/CLionProjects/free/test/torture/mul-sext.c:3:24: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/mul-sext.c:4:24: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/mul-sext.c:8:1: error: expected ';', got token kind 2
+OTHER_CRASH multi-ix: /home/forrest/CLionProjects/free/test/torture/multi-ix.c:15:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH nest-align-1: /home/forrest/CLionProjects/free/test/torture/nest-align-1.c:9:1: error: cannot find include file 'stddef.h'
+OTHER_CRASH nest-stdar-1: /home/forrest/CLionProjects/free/test/torture/nest-stdar-1.c:2:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH nestfunc-1: /home/forrest/CLionProjects/free/test/torture/nestfunc-1.c:20:5: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH nestfunc-2: /home/forrest/CLionProjects/free/test/torture/nestfunc-2.c:17:5: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH nestfunc-3: /home/forrest/CLionProjects/free/test/torture/nestfunc-3.c:16:5: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/nestfunc-3.c:24:5: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/nestfunc-3.c:29:5: error: expected ';', got token kind 43
+PARSE_CRASH nestfunc-5: /home/forrest/CLionProjects/free/test/torture/nestfunc-5.c:11:3: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH nestfunc-6: /home/forrest/CLionProjects/free/test/torture/nestfunc-6.c:6:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/nestfunc-6.c:15:3: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+PARSE_CRASH nestfunc-7: /home/forrest/CLionProjects/free/test/torture/nestfunc-7.c:16:5: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+OTHER_CRASH p18298: /home/forrest/CLionProjects/free/test/torture/p18298.c:4:1: error: cannot find include file 'stdbool.h'
+OTHER_CRASH packed-aligned: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:121: Error: symbol `.LF0' is already defined
+free-cc: assembly failed
+PARSE_CRASH pending-4: /home/forrest/CLionProjects/free/test/torture/pending-4.c:5:6: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/pending-4.c:7:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pending-4.c:13:1: error: expected ';', got token kind 43
+PARSE_CRASH postmod-1: /home/forrest/CLionProjects/free/test/torture/postmod-1.c:6:44: error: expected ';', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/postmod-1.c:6:44: error: expected expression, got token kind 37
+/home/forrest/CLionProjects/free/test/torture/postmod-1.c:6:46: error: expected ';', got token kind 2
+PARSE_CRASH pr101188: /home/forrest/CLionProjects/free/test/torture/pr101188.c:2:24: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr101188.c:3:25: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr101188.c:5:23: error: expected ';', got token kind 41
+OTHER_CRASH pr101335: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr102134: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x194): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr103052: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `js_throw':
+(.text+0xc): undefined reference to `__builtin_exit'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `checkfutureword':
+OTHER_CRASH pr103209: /home/forrest/CLionProjects/free/test/torture/pr103209.c:4:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH pr103255: /home/forrest/CLionProjects/free/test/torture/pr103255.c:38:23: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr103255.c:38:76: error: expected ';', got token kind 42
+/home/forrest/CLionProjects/free/test/torture/pr103255.c:38:76: error: expected expression, got token kind 42
+OTHER_CRASH pr103376: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr103405: /home/forrest/CLionProjects/free/test/torture/pr103405.c:1:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr103405.c:4:15: error: expected ';', got token kind 69
+free-cc: 2 error(s) generated
+OTHER_CRASH pr103417: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x6c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr10352-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xc0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr104196: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x114): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr104604: /home/forrest/CLionProjects/free/test/torture/pr104604.c:7:15: error: expected ')', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/pr104604.c:7:15: error: expected ';', got token kind 81
+free-cc: 2 error(s) generated
+OTHER_CRASH pr104839: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1f0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr105613: /home/forrest/CLionProjects/free/test/torture/pr105613.c:4:65: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr105613.c:7:8: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr105613.c:7:8: error: expected ';', got token kind 2
+PARSE_CRASH pr105984: /home/forrest/CLionProjects/free/test/torture/pr105984.c:5:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+OTHER_CRASH pr106032: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x118): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1b8): undefined reference to `__builtin_abort'
+OTHER_CRASH pr106523: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x120): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr107131: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x114): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr107879: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x204): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr108498-1: /home/forrest/CLionProjects/free/test/torture/pr108498-1.c:25:15: error: expected ';', got token kind 77
+free-cc: 1 error(s) generated
+PARSE_CRASH pr108498-2: /home/forrest/CLionProjects/free/test/torture/pr108498-2.c:14:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr108498-2.c:14:23: error: expected ';', got token kind 3
+/home/forrest/CLionProjects/free/test/torture/pr108498-2.c:14:41: error: expected ';', got token kind 44
+OTHER_CRASH pr108789: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x128): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x16c): undefined reference to `__builtin_abort'
+PARSE_CRASH pr109040: /home/forrest/CLionProjects/free/test/torture/pr109040.c:10:18: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr109040.c:10:20: error: expected ')', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr109040.c:10:20: error: expected ';', got token kind 0
+PARSE_CRASH pr109778: /home/forrest/CLionProjects/free/test/torture/pr109778.c:5:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+OTHER_CRASH pr109925: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x298): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr110252-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xd4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr110252-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `sinkandcheck':
+(.text+0x3c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr110252-4: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr110817-1: /home/forrest/CLionProjects/free/test/torture/pr110817-1.c:9:15: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr110817-1.c:9:17: error: expected ')', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/pr110817-1.c:9:17: error: expected ';', got token kind 44
+OTHER_CRASH pr110817-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xd0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr110817-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr110914: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x64): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH pr110954-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr111151: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf8): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1f0): undefined reference to `__builtin_abort'
+OTHER_CRASH pr111331-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x168): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr111331-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x118): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr111331-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x108): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr111408: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x13c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr111422: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x344): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr111613: /home/forrest/CLionProjects/free/test/torture/pr111613.c:2:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH pr111863-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x9c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xbc): undefined reference to `__builtin_printf'
+OTHER_CRASH pr112758: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x80): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr113010: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x38): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr114207: /home/forrest/CLionProjects/free/test/torture/pr114207.c:2:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH pr114552: /home/forrest/CLionProjects/free/test/torture/pr114552.c:5:29: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr114552.c:5:39: error: expected ';', got token kind 0
+free-cc: 2 error(s) generated
+OTHER_CRASH pr114965: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x100): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr115033: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x10c): undefined reference to `__builtin_exit'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr117095: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x364): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr118623: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x10c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr119030: /home/forrest/CLionProjects/free/test/torture/pr119030.c:3:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+OTHER_CRASH pr119071: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x144): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr119291: /home/forrest/CLionProjects/free/test/torture/pr119291.c:22:13: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr119291.c:23:13: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH pr120630: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x170): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr120677: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1a4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr122943: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x18c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1b4): undefined reference to `__builtin_abort'
+OTHER_CRASH pr15262-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xdc): undefined reference to `__builtin_malloc'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr15296: /home/forrest/CLionProjects/free/test/torture/pr15296.c:9:25: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr15296.c:10:18: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr15296.c:14:5: error: expected ';', got token kind 2
+PARSE_CRASH pr19515: /home/forrest/CLionProjects/free/test/torture/pr19515.c:11:12: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr19515.c:11:13: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr19515.c:11:13: error: expected ';', got token kind 0
+PARSE_CRASH pr20601-1: /home/forrest/CLionProjects/free/test/torture/pr20601-1.c:33:15: error: expected ';', got token kind 56
+free-cc: 1 error(s) generated
+OTHER_CRASH pr20621-1: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:26: Error: immediate offset out of range
+/tmp/free-cc-0.s:28: Error: immediate offset out of range
+OTHER_CRASH pr22061-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb8): undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr22061-3: /home/forrest/CLionProjects/free/test/torture/pr22061-3.c:7:28: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH pr22061-4: /home/forrest/CLionProjects/free/test/torture/pr22061-4.c:7:28: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH pr22098-1: /home/forrest/CLionProjects/free/test/torture/pr22098-1.c:3:26: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr22098-1.c:9:13: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr22098-1.c:10:32: error: expected expression, got token kind 43
+PARSE_CRASH pr22098-2: /home/forrest/CLionProjects/free/test/torture/pr22098-2.c:3:26: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr22098-2.c:9:13: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr22098-2.c:10:32: error: expected expression, got token kind 43
+PARSE_CRASH pr22098-3: /home/forrest/CLionProjects/free/test/torture/pr22098-3.c:3:26: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr22098-3.c:11:13: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr22098-3.c:12:32: error: expected expression, got token kind 43
+PARSE_CRASH pr22141-1: /home/forrest/CLionProjects/free/test/torture/pr22141-1.c:44:18: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr22141-1.c:44:20: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr22141-1.c:44:33: error: expected ';', got token kind 44
+PARSE_CRASH pr22141-2: /home/forrest/CLionProjects/free/test/torture/pr22141-2.c:44:18: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr22141-2.c:44:20: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr22141-2.c:44:33: error: expected ';', got token kind 44
+OTHER_CRASH pr22493-1: /home/forrest/CLionProjects/free/test/torture/pr22493-1.c:4:1: error: cannot find include file 'limits.h'
+OTHER_CRASH pr23047: /home/forrest/CLionProjects/free/test/torture/pr23047.c:3:1: error: cannot find include file 'limits.h'
+OTHER_CRASH pr23135: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:52: Error: immediate offset out of range
+/tmp/free-cc-0.s:54: Error: immediate offset out of range
+PARSE_CRASH pr23324: /home/forrest/CLionProjects/free/test/torture/pr23324.c:26:3: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr23324.c:27:3: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr23324.c:83:3: error: expected expression, got token kind 43
+OTHER_CRASH pr23941: /tmp/free-cc-0.s: Assembler messages:
+/tmp/free-cc-0.s:65: Error: symbol `.LF0' is already defined
+free-cc: assembly failed
+PARSE_CRASH pr24135: /home/forrest/CLionProjects/free/test/torture/pr24135.c:11:5: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+PARSE_CRASH pr24716: /home/forrest/CLionProjects/free/test/torture/pr24716.c:32:22: error: expected ';', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr24716.c:32:22: error: expected 'while', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr24716.c:32:22: error: expected '(', got token kind 37
+PARSE_CRASH pr27285: /home/forrest/CLionProjects/free/test/torture/pr27285.c:38:28: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr27285.c:38:30: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr27285.c:38:30: error: expected ';', got token kind 0
+OTHER_CRASH pr27364: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xc4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr28289: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `ix86_split_ashr':
+(.text+0x34): undefined reference to `null'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr28403: /home/forrest/CLionProjects/free/test/torture/pr28403.c:14:1: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH pr28651: /home/forrest/CLionProjects/free/test/torture/pr28651.c:2:1: error: cannot find include file 'limits.h'
+PARSE_CRASH pr28865: /home/forrest/CLionProjects/free/test/torture/pr28865.c:3:15: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr28865.c:3:55: error: expected ';', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/pr28865.c:4:15: error: expected expression, got token kind 43
+PARSE_CRASH pr28982a: /home/forrest/CLionProjects/free/test/torture/pr28982a.c:32:49: error: expected ';', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr28982a.c:32:49: error: expected expression, got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr28982a.c:32:51: error: expected ';', got token kind 2
+PARSE_CRASH pr28982b: /home/forrest/CLionProjects/free/test/torture/pr28982b.c:14:49: error: expected ';', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr28982b.c:14:49: error: expected expression, got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr28982b.c:14:51: error: expected ';', got token kind 2
+OTHER_CRASH pr30185: gen_addr: not an lvalue (kind=31)
+OTHER_CRASH pr31072: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x30): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr31448-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1f8): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x23c): undefined reference to `__builtin_abort'
+OTHER_CRASH pr31448: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1fc): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x240): undefined reference to `__builtin_abort'
+PARSE_CRASH pr33382: /home/forrest/CLionProjects/free/test/torture/pr33382.c:6:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr33382.c:6:36: error: expected ';', got token kind 44
+free-cc: 2 error(s) generated
+PARSE_CRASH pr33631: /home/forrest/CLionProjects/free/test/torture/pr33631.c:10:48: error: expected expression, got token kind 38
+/home/forrest/CLionProjects/free/test/torture/pr33631.c:10:49: error: expected '}', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr33631.c:10:49: error: expected ';', got token kind 2
+PARSE_CRASH pr33870-1: /home/forrest/CLionProjects/free/test/torture/pr33870-1.c:20:15: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH pr33870: /home/forrest/CLionProjects/free/test/torture/pr33870.c:16:15: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH pr34130: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x28): undefined reference to `__builtin_abs'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr34176: /home/forrest/CLionProjects/free/test/torture/pr34176.c:2:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr34176.c:15:10: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr34176.c:16:10: error: expected ';', got token kind 2
+PARSE_CRASH pr34415: /home/forrest/CLionProjects/free/test/torture/pr34415.c:2:1: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH pr34456: /home/forrest/CLionProjects/free/test/torture/pr34456.c:4:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH pr34768-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `test':
+(.text+0x84): undefined reference to `null'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr34768-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `test':
+(.text+0x94): undefined reference to `null'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr35456: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xc0): undefined reference to `__builtin_signbit'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr35472: /home/forrest/CLionProjects/free/test/torture/pr35472.c:2:52: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr35472.c:2:52: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH pr36034-1: /home/forrest/CLionProjects/free/test/torture/pr36034-1.c:1:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr36034-1.c:2:21: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH pr36038: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x3e4): undefined reference to `__builtin_memcmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x3f0): undefined reference to `__builtin_abort'
+PARSE_CRASH pr36321: /home/forrest/CLionProjects/free/test/torture/pr36321.c:6:22: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH pr36765: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x1c): undefined reference to `__builtin_malloc'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr37125: /home/forrest/CLionProjects/free/test/torture/pr37125.c:3:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+OTHER_CRASH pr37573: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x6e0): undefined reference to `__builtin_memcmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x6f8): undefined reference to `__builtin_abort'
+OTHER_CRASH pr37780: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x350): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr37882: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x9c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr38051: /home/forrest/CLionProjects/free/test/torture/pr38051.c:1:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr38051.c:5:10: error: expected ';', got token kind 76
+/home/forrest/CLionProjects/free/test/torture/pr38051.c:25:51: error: expected ')', got token kind 2
+PARSE_CRASH pr38151: /home/forrest/CLionProjects/free/test/torture/pr38151.c:8:12: error: expected ';', got token kind 69
+/home/forrest/CLionProjects/free/test/torture/pr38151.c:28:13: error: member access on non-struct type
+/home/forrest/CLionProjects/free/test/torture/pr38151.c:30:13: error: member access on non-struct type
+PARSE_CRASH pr38212: /home/forrest/CLionProjects/free/test/torture/pr38212.c:2:22: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr38212.c:2:22: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH pr38533: arena_alloc: out of memory (67133248/67108864)
+PARSE_CRASH pr38969: /home/forrest/CLionProjects/free/test/torture/pr38969.c:3:13: error: expected ';', got token kind 65
+free-cc: 1 error(s) generated
+PARSE_CRASH pr39100: /home/forrest/CLionProjects/free/test/torture/pr39100.c:50:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr39100.c:50:23: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr39100.c:50:23: error: expected ';', got token kind 0
+PARSE_CRASH pr39228: /home/forrest/CLionProjects/free/test/torture/pr39228.c:5:15: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+PARSE_CRASH pr39339: /home/forrest/CLionProjects/free/test/torture/pr39339.c:64:17: error: expected expression, got token kind 38
+/home/forrest/CLionProjects/free/test/torture/pr39339.c:64:18: error: expected '}', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr39339.c:64:18: error: expected ';', got token kind 2
+PARSE_CRASH pr39501: /home/forrest/CLionProjects/free/test/torture/pr39501.c:13:39: error: expected ';', got token kind 50
+free-cc: 1 error(s) generated
+OTHER_CRASH pr40386: arena_alloc: out of memory (67321240/67108864)
+PARSE_CRASH pr40579: /home/forrest/CLionProjects/free/test/torture/pr40579.c:3:1: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH pr40668: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x38): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+PARSE_CRASH pr41239: /home/forrest/CLionProjects/free/test/torture/pr41239.c:33:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr41239.c:33:23: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr41239.c:33:23: error: expected ';', got token kind 0
+OTHER_CRASH pr41463: /home/forrest/CLionProjects/free/test/torture/pr41463.c:2:1: error: cannot find include file 'stdlib.h'
+PARSE_CRASH pr41750: /home/forrest/CLionProjects/free/test/torture/pr41750.c:50:30: error: expected ')', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr41750.c:50:39: error: expected ';', got token kind 42
+free-cc: 2 error(s) generated
+PARSE_CRASH pr41935: /home/forrest/CLionProjects/free/test/torture/pr41935.c:10:41: error: expected ')', got token kind 45
+/home/forrest/CLionProjects/free/test/torture/pr41935.c:10:47: error: expected ';', got token kind 42
+/home/forrest/CLionProjects/free/test/torture/pr41935.c:10:47: error: expected expression, got token kind 42
+PARSE_CRASH pr42248: /home/forrest/CLionProjects/free/test/torture/pr42248.c:2:12: error: expected ';', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/pr42248.c:3:12: error: expected ';', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/pr42248.c:9:26: error: expected ')', got token kind 61
+PARSE_CRASH pr42614: /home/forrest/CLionProjects/free/test/torture/pr42614.c:23:15: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+PARSE_CRASH pr42691: /home/forrest/CLionProjects/free/test/torture/pr42691.c:19:28: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr42691.c:19:30: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr42691.c:19:30: error: expected ';', got token kind 0
+PARSE_CRASH pr42833: /home/forrest/CLionProjects/free/test/torture/pr42833.c:1:29: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr42833.c:2:31: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr42833.c:4:25: error: expected ';', got token kind 2
+PARSE_CRASH pr43008: /home/forrest/CLionProjects/free/test/torture/pr43008.c:6:1: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH pr43236: /home/forrest/CLionProjects/free/test/torture/pr43236.c:3:51: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr43236.c:3:51: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr43236.c:4:65: error: expected ')', got token kind 2
+OTHER_CRASH pr43560: DEBUG gen_globalvar: name=s sz=20 val=0 init=0xffff7fea5808 has_init=1
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `s':
+(.data+0x8): undefined reference to `.LS2'
+OTHER_CRASH pr43784: DEBUG gen_globalvar: name=v sz=260 val=0 init=(nil) has_init=0
+DEBUG gen_globalvar: name=p sz=8 val=0 init=0xffffb80b3258 has_init=1
+DEBUG gen_globalvar: name=q sz=8 val=0 init=0xffffb80b4170 has_init=1
+PARSE_CRASH pr44164: /home/forrest/CLionProjects/free/test/torture/pr44164.c:14:19: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr44164.c:14:20: error: expected ';', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/pr44164.c:15:3: error: expected ';', got token kind 72
+OTHER_CRASH pr44468: /home/forrest/CLionProjects/free/test/torture/pr44468.c:2:1: error: cannot find include file 'stddef.h'
+OTHER_CRASH pr44575: /home/forrest/CLionProjects/free/test/torture/pr44575.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH pr44683: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `copysign_bug':
+(.text+0xb8): undefined reference to `__builtin_copysign'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH pr44852: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x19c): undefined reference to `__builtin_strcmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1c8): undefined reference to `__builtin_abort'
+OTHER_CRASH pr44942: /home/forrest/CLionProjects/free/test/torture/pr44942.c:4:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH pr47148: /home/forrest/CLionProjects/free/test/torture/pr47148.c:3:15: error: expected ';', got token kind 81
+/home/forrest/CLionProjects/free/test/torture/pr47148.c:14:15: error: expected ';', got token kind 82
+free-cc: 2 error(s) generated
+OTHER_CRASH pr47155: DEBUG gen_globalvar: name=a sz=4 val=0 init=(nil) has_init=0
+DEBUG gen_globalvar: name=b sz=1 val=0 init=0xffff9dff0858 has_init=1
+DEBUG gen_globalvar: name=c sz=4 val=1 init=(nil) has_init=1
+OTHER_CRASH pr47237: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x6c): undefined reference to `__builtin_apply_args'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x84): undefined reference to `__builtin_apply'
+OTHER_CRASH pr47337: DEBUG gen_globalvar: name=a sz=1024 val=0 init=(nil) has_init=0
+DEBUG gen_globalvar: name=b sz=4 val=0 init=(nil) has_init=0
+DEBUG gen_globalvar: name=c sz=1 val=0 init=(nil) has_init=0
+OTHER_CRASH pr47538: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x7e0): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x918): undefined reference to `__builtin_abort'
+PARSE_CRASH pr48571-1: /home/forrest/CLionProjects/free/test/torture/pr48571-1.c:10:50: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr48571-1.c:10:50: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr48571-1.c:10:55: error: expected ';', got token kind 42
+PARSE_CRASH pr49073: /home/forrest/CLionProjects/free/test/torture/pr49073.c:10:9: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH pr49279: /home/forrest/CLionProjects/free/test/torture/pr49279.c:4:35: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH pr49419: /home/forrest/CLionProjects/free/test/torture/pr49419.c:31:23: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr49419.c:31:25: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr49419.c:31:25: error: expected ';', got token kind 0
+PARSE_CRASH pr49644: /home/forrest/CLionProjects/free/test/torture/pr49644.c:8:12: error: expected ';', got token kind 61
+/home/forrest/CLionProjects/free/test/torture/pr49644.c:8:47: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH pr49768: /home/forrest/CLionProjects/free/test/torture/pr49768.c:8:65: error: expected expression, got token kind 38
+/home/forrest/CLionProjects/free/test/torture/pr49768.c:8:66: error: expected '}', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr49768.c:8:66: error: expected ';', got token kind 2
+PARSE_CRASH pr49886: /home/forrest/CLionProjects/free/test/torture/pr49886.c:69:24: error: expected ')', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr49886.c:69:33: error: expected ';', got token kind 42
+free-cc: 2 error(s) generated
+LINK_CRASH pr50865: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x80): undefined reference to `__LONG_LONG_MAX__'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol `__LONG_LONG_MAX__' which may bind externally can not be used when making a shared object; recompile with -fPIC
+PARSE_CRASH pr51323: /home/forrest/CLionProjects/free/test/torture/pr51323.c:14:15: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+PARSE_CRASH pr51447: /home/forrest/CLionProjects/free/test/torture/pr51447.c:22:7: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+OTHER_CRASH pr51877: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x60): undefined reference to `__builtin_memset'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr51933: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x518): undefined reference to `__builtin_memcmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x544): undefined reference to `__builtin_abort'
+OTHER_CRASH pr52760: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x504): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr53645-2: /home/forrest/CLionProjects/free/test/torture/pr53645-2.c:10:6: error: expected ';', got token kind 50
+/home/forrest/CLionProjects/free/test/torture/pr53645-2.c:47:11: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr53645-2.c:47:13: error: expected ')', got token kind 0
+PARSE_CRASH pr53645: /home/forrest/CLionProjects/free/test/torture/pr53645.c:10:6: error: expected ';', got token kind 50
+/home/forrest/CLionProjects/free/test/torture/pr53645.c:47:11: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr53645.c:47:13: error: expected ')', got token kind 0
+OTHER_CRASH pr53688: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `init':
+(.text+0x30): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x60): undefined reference to `__builtin_memcpy'
+LINK_CRASH pr54937: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol `exit@@GLIBC_2.17' which may bind externally can not be used when making a shared object; recompile with -fPIC
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o(.text+0xe0): unresolvable R_AARCH64_ADR_PREL_PG_HI21 relocation against symbol `exit@@GLIBC_2.17'
+/usr/bin/aarch64-linux-gnu-ld.bfd: final link failed: bad value
+PARSE_CRASH pr54985: /home/forrest/CLionProjects/free/test/torture/pr54985.c:32:15: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr54985.c:32:16: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr54985.c:32:16: error: expected ';', got token kind 0
+OTHER_CRASH pr56205: /home/forrest/CLionProjects/free/test/torture/pr56205.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH pr56799: /home/forrest/CLionProjects/free/test/torture/pr56799.c:4:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH pr56837: /home/forrest/CLionProjects/free/test/torture/pr56837.c:2:10: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+OTHER_CRASH pr56866: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x30): undefined reference to `__builtin_memset'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x58): undefined reference to `__builtin_memset'
+OTHER_CRASH pr56899: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `f1':
+(.text+0x84): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `f2':
+OTHER_CRASH pr56982: /home/forrest/CLionProjects/free/test/torture/pr56982.c:3:1: error: cannot find include file 'setjmp.h'
+PARSE_CRASH pr57130: /home/forrest/CLionProjects/free/test/torture/pr57130.c:3:39: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr57130.c:3:57: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr57130.c:18:18: error: expected expression, got token kind 43
+PARSE_CRASH pr57321: /home/forrest/CLionProjects/free/test/torture/pr57321.c:10:24: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr57321.c:10:26: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr57321.c:10:26: error: expected ';', got token kind 0
+OTHER_CRASH pr57344-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x34): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr57344-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x34): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr57344-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x34): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr57344-4: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x40): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr57829: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1fc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr58209: /home/forrest/CLionProjects/free/test/torture/pr58209.c:4:25: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr58209.c:5:3: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr58209.c:7:3: error: expected ';', got token kind 7
+OTHER_CRASH pr58364: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr58431: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x260): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr58570: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr58574: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x4fc4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr58726: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x148): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr58831: /home/forrest/CLionProjects/free/test/torture/pr58831.c:2:1: error: cannot find include file 'assert.h'
+OTHER_CRASH pr58943: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x10c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr58984: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x31c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x404): undefined reference to `__builtin_abort'
+OTHER_CRASH pr59014-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1ac): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr59014: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr59101: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x8c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr59221: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x158): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr59229: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x74): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xc0): undefined reference to `__builtin_memcmp'
+OTHER_CRASH pr59358: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x32c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x480): undefined reference to `__builtin_abort'
+OTHER_CRASH pr59413: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x110): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+LINK_CRASH pr59643: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x214): undefined reference to `__DBL_MANT_DIG__'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol `__DBL_MANT_DIG__' which may bind externally can not be used when making a shared object; recompile with -fPIC
+OTHER_CRASH pr60003: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `baz':
+(.text+0x20): undefined reference to `__builtin_longjmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+PARSE_CRASH pr60017: /home/forrest/CLionProjects/free/test/torture/pr60017.c:18:20: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr60017.c:18:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr60017.c:18:29: error: expected ';', got token kind 43
+OTHER_CRASH pr60062: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x38): undefined reference to `__builtin_strcmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x50): undefined reference to `__builtin_abort'
+OTHER_CRASH pr60454: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x154): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr60822: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x110): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr60960: /home/forrest/CLionProjects/free/test/torture/pr60960.c:14:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr60960.c:14:23: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr60960.c:14:34: error: expected ';', got token kind 44
+OTHER_CRASH pr61306-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x154): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr61306-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x150): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr61306-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x88): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr61375: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x100): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr61517: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xdc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr61673: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x6c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH pr61682: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x10c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr61725: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xdc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr62151: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x280): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr63302: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x2d0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr63641: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x394): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x46c): undefined reference to `__builtin_abort'
+OTHER_CRASH pr63659: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x230): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr63843: /home/forrest/CLionProjects/free/test/torture/pr63843.c:4:1: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+OTHER_CRASH pr64006: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x2c8): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x318): undefined reference to `__builtin_abort'
+OTHER_CRASH pr64242: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `broken_longjmp':
+(.text+0x34): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x5c): undefined reference to `__builtin_memset'
+OTHER_CRASH pr64255: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x70): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+OTHER_CRASH pr64260: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x160): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr64682: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x34): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr64718: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb0): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xdc): undefined reference to `__builtin_abort'
+OTHER_CRASH pr64756: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `fn1':
+(.text+0xf0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr64957: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x198): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr64979: /home/forrest/CLionProjects/free/test/torture/pr64979.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH pr65053-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x144): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr65053-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x60): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x118): undefined reference to `__builtin_abort'
+OTHER_CRASH pr65170: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0xd4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr65215-1: /home/forrest/CLionProjects/free/test/torture/pr65215-1.c:3:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+PARSE_CRASH pr65215-2: /home/forrest/CLionProjects/free/test/torture/pr65215-2.c:3:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+PARSE_CRASH pr65215-3: /home/forrest/CLionProjects/free/test/torture/pr65215-3.c:5:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+PARSE_CRASH pr65215-4: /home/forrest/CLionProjects/free/test/torture/pr65215-4.c:5:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+PARSE_CRASH pr65215-5: /home/forrest/CLionProjects/free/test/torture/pr65215-5.c:20:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr65215-5.c:20:23: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr65215-5.c:20:23: error: expected ';', got token kind 0
+OTHER_CRASH pr65216: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1ac): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr65369: /home/forrest/CLionProjects/free/test/torture/pr65369.c:3:1: error: cannot find include file 'stdint.h'
+OTHER_CRASH pr65401: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x43c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x5e8): undefined reference to `__builtin_abort'
+OTHER_CRASH pr65418-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x230): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr65418-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x2a0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr65427: /home/forrest/CLionProjects/free/test/torture/pr65427.c:22:11: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr65427.c:22:13: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr65427.c:22:36: error: expected ';', got token kind 44
+OTHER_CRASH pr65648: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x58): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr65956: /home/forrest/CLionProjects/free/test/torture/pr65956.c:62:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr65956.c:62:40: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr65956.c:62:56: error: expected ';', got token kind 44
+OTHER_CRASH pr66187: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr66233: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x144): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr66757: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x60): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr66940: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x9c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xd0): undefined reference to `__builtin_abort'
+PARSE_CRASH pr67037: /home/forrest/CLionProjects/free/test/torture/pr67037.c:5:15: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+ASM_CRASH pr67226: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `assemblez_1':
+(.text+0x54): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `t0':
+OTHER_CRASH pr67781: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr67929_1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x6c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr68143_1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x3c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr68185: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1c4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr68249: /home/forrest/CLionProjects/free/test/torture/pr68249.c:11:33: error: expected expression, got token kind 48
+/home/forrest/CLionProjects/free/test/torture/pr68249.c:11:35: error: expected ':', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr68249.c:12:48: error: expected expression, got token kind 48
+OTHER_CRASH pr68250: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `fn2':
+(.text+0x2d4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr68321: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x200): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr68328: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x54): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr68376-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf8): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x184): undefined reference to `__builtin_abort'
+OTHER_CRASH pr68381: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x5c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH pr68390: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x120): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr68624: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x250): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr68648: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xcc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr68841: /home/forrest/CLionProjects/free/test/torture/pr68841.c:1:15: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+OTHER_CRASH pr69097-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x20c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr69320-1: /home/forrest/CLionProjects/free/test/torture/pr69320-1.c:2:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH pr69320-2: /home/forrest/CLionProjects/free/test/torture/pr69320-2.c:3:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH pr69320-3: /home/forrest/CLionProjects/free/test/torture/pr69320-3.c:2:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH pr69320-4: /home/forrest/CLionProjects/free/test/torture/pr69320-4.c:2:1: error: cannot find include file 'stdlib.h'
+OTHER_CRASH pr69403: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `fn1':
+(.text+0x7c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr69447: /home/forrest/CLionProjects/free/test/torture/pr69447.c:6:28: error: expected ')', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr69447.c:6:38: error: expected ';', got token kind 42
+free-cc: 2 error(s) generated
+OTHER_CRASH pr69691: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `fn':
+(.text+0x2c): undefined reference to `__builtin_strchr'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x7c): undefined reference to `__builtin_abort'
+OTHER_CRASH pr70005: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `fn1':
+(.text+0x2f0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr70127: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x34): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr70222-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x134): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr70222-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr70429: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xdc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr70460: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x180): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1b4): undefined reference to `__builtin_abort'
+OTHER_CRASH pr70566: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `set_f2':
+(.text+0xac): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr70602: /home/forrest/CLionProjects/free/test/torture/pr70602.c:17:24: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr70602.c:17:25: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr70602.c:17:25: error: expected ';', got token kind 0
+PARSE_CRASH pr70903: /home/forrest/CLionProjects/free/test/torture/pr70903.c:5:36: error: expected ')', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr70903.c:5:46: error: expected ';', got token kind 42
+free-cc: 2 error(s) generated
+PARSE_CRASH pr71083: /home/forrest/CLionProjects/free/test/torture/pr71083.c:1:39: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr71083.c:4:12: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr71083.c:31:34: error: no member 'base' in struct/union
+PARSE_CRASH pr71494: /home/forrest/CLionProjects/free/test/torture/pr71494.c:10:3: error: expected ';', got token kind 43
+free-cc: 1 error(s) generated
+OTHER_CRASH pr71550: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x8c): undefined reference to `__builtin_printf'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr71554: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xec): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr71626-1: /home/forrest/CLionProjects/free/test/torture/pr71626-1.c:3:25: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr71626-1.c:6:1: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH pr71626-2: /home/forrest/CLionProjects/free/test/torture/pr71626-1.c:3:25: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr71626-1.c:6:1: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH pr71631: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x2c4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr71700: /home/forrest/CLionProjects/free/test/torture/pr71700.c:8:24: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr71700.c:8:33: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH pr77718: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x30): undefined reference to `__builtin_memcmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+OTHER_CRASH pr77767: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x78): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr78170: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x244): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr78378: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xd0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr78436: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xc0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr78438: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr78477: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1cc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr78586: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x40): undefined reference to `__builtin_sprintf'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x70): undefined reference to `__builtin_abort'
+OTHER_CRASH pr78617: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1e8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr78622: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0xd0): undefined reference to `__builtin_snprintf'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x118): undefined reference to `__builtin_printf'
+OTHER_CRASH pr78675: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xdc): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x11c): undefined reference to `__builtin_abort'
+OTHER_CRASH pr78720: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x308): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr78726: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr78791: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x190): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr79043: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x78): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr79327: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x40): undefined reference to `__builtin_sprintf'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x58): undefined reference to `__builtin_abort'
+OTHER_CRASH pr79354: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0xb4): undefined reference to `__builtin_memcpy'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr79388: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x11c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr79450: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x11c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr79737-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x294): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr79737-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x3e0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr80153: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `check':
+(.text+0x30): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `_fputs':
+OTHER_CRASH pr80421: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `baz':
+(.text+0x58): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr80501: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xe0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr80692: /home/forrest/CLionProjects/free/test/torture/pr80692.c:5:13: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr80692.c:5:22: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr80692.c:7:15: error: expected ')', got token kind 2
+OTHER_CRASH pr81281: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x110): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+PARSE_CRASH pr81555: /home/forrest/CLionProjects/free/test/torture/pr81555.c:4:7: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr81555.c:10:9: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH pr81556: /home/forrest/CLionProjects/free/test/torture/pr81556.c:11:9: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH pr81588: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x138): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x19c): undefined reference to `__builtin_abort'
+PARSE_CRASH pr81913: /home/forrest/CLionProjects/free/test/torture/pr81913.c:3:24: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr81913.c:4:25: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr81913.c:7:1: error: expected ';', got token kind 2
+OTHER_CRASH pr82192: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xfc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr82210: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x200): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr82387: /home/forrest/CLionProjects/free/test/torture/pr82387.c:10:5: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr82387.c:10:6: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr82387.c:10:6: error: expected ';', got token kind 0
+PARSE_CRASH pr82388: /home/forrest/CLionProjects/free/test/torture/pr82388.c:8:21: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr82388.c:8:22: error: expected '}', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr82388.c:8:22: error: expected ';', got token kind 0
+PARSE_CRASH pr82524: /home/forrest/CLionProjects/free/test/torture/pr82524.c:6:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+PARSE_CRASH pr82954: /home/forrest/CLionProjects/free/test/torture/pr82954.c:4:22: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr82954.c:4:22: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH pr83269: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xc8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr83298: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr83362: /home/forrest/CLionProjects/free/test/torture/pr83362.c:1:24: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr83362.c:2:25: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr83362.c:4:5: error: expected ';', got token kind 2
+OTHER_CRASH pr83383: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x180): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr83477: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x15c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr84169: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x128): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr84339: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x2c): undefined reference to `__builtin_strlen'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+OTHER_CRASH pr84478: arena_alloc: out of memory (67123800/67108864)
+OTHER_CRASH pr84521: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `broken_longjmp':
+(.text+0x28): undefined reference to `__builtin_longjmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `test':
+PARSE_CRASH pr84748: /home/forrest/CLionProjects/free/test/torture/pr84748.c:3:27: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr84748.c:6:6: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr84748.c:23:8: error: expected ';', got token kind 2
+OTHER_CRASH pr85095: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x788): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr85156: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr85331: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x98): undefined reference to `__builtin_shuffle'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH pr85529-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x21c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr85529-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x188): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr85582-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x22c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x29c): undefined reference to `__builtin_abort'
+OTHER_CRASH pr85582-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x148): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1a4): undefined reference to `__builtin_abort'
+OTHER_CRASH pr86231: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x324): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr86492: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x164): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr86528: /home/forrest/CLionProjects/free/test/torture/pr86528.c:4:32: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr86528.c:4:32: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH pr86659-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x148): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x170): undefined reference to `__builtin_abort'
+OTHER_CRASH pr86659-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x148): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x170): undefined reference to `__builtin_abort'
+OTHER_CRASH pr86714: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x30): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x68): undefined reference to `__builtin_memset'
+OTHER_CRASH pr86844: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x27c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr87053: /home/forrest/CLionProjects/free/test/torture/pr87053.c:11:8: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr87053.c:11:23: error: expected ';', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/pr87053.c:15:27: error: no member 'z' in struct/union
+OTHER_CRASH pr87290: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x2b4): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x324): undefined reference to `__builtin_abort'
+PARSE_CRASH pr87623: /home/forrest/CLionProjects/free/test/torture/pr87623.c:27:15: error: expected expression, got token kind 38
+/home/forrest/CLionProjects/free/test/torture/pr87623.c:27:16: error: expected '}', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr87623.c:27:16: error: expected ';', got token kind 2
+OTHER_CRASH pr88693: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x20): undefined reference to `__builtin_strlen'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x38): undefined reference to `__builtin_abort'
+OTHER_CRASH pr88714: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0xd4): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1b8): undefined reference to `__builtin_abort'
+PARSE_CRASH pr88739: /home/forrest/CLionProjects/free/test/torture/pr88739.c:17:24: error: expected expression, got token kind 38
+/home/forrest/CLionProjects/free/test/torture/pr88739.c:17:27: error: member access on non-struct type
+free-cc: 2 error(s) generated
+OTHER_CRASH pr88904: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+(.text+0x34): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH pr89195: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr89369: /home/forrest/CLionProjects/free/test/torture/pr89369.c:7:30: error: expected ')', got token kind 57
+/home/forrest/CLionProjects/free/test/torture/pr89369.c:7:30: error: expected ';', got token kind 57
+free-cc: 2 error(s) generated
+PARSE_CRASH pr89434: /home/forrest/CLionProjects/free/test/torture/pr89434.c:6:15: error: expected ';', got token kind 81
+free-cc: 1 error(s) generated
+OTHER_CRASH pr89634: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x6d0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr89826: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xdc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr90025: /home/forrest/CLionProjects/free/test/torture/pr90025.c:16:22: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr90025.c:16:22: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+OTHER_CRASH pr90311: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xd0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr90949: /home/forrest/CLionProjects/free/test/torture/pr90949.c:13:36: error: expected ')', got token kind 37
+/home/forrest/CLionProjects/free/test/torture/pr90949.c:13:47: error: expected ';', got token kind 42
+free-cc: 2 error(s) generated
+OTHER_CRASH pr91450-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x64): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `bar':
+OTHER_CRASH pr91450-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x5c): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x84): undefined reference to `__builtin_abort'
+PARSE_CRASH pr91597: /home/forrest/CLionProjects/free/test/torture/pr91597.c:21:15: error: expected ';', got token kind 82
+free-cc: 1 error(s) generated
+OTHER_CRASH pr91632: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xac): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr91635: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x2f4): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x31c): undefined reference to `__builtin_abort'
+OTHER_CRASH pr92140: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x708): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x738): undefined reference to `__builtin_abort'
+PARSE_CRASH pr92618: /home/forrest/CLionProjects/free/test/torture/pr92618.c:13:20: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr92618.c:13:22: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr92618.c:13:35: error: expected ';', got token kind 44
+OTHER_CRASH pr92904: /home/forrest/CLionProjects/free/test/torture/pr92904.c:4:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH pr93213: /home/forrest/CLionProjects/free/test/torture/pr93213.c:6:33: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr93213.c:7:33: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/pr93213.c:8:27: error: expected ';', got token kind 2
+OTHER_CRASH pr93249: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x88): undefined reference to `__builtin_strncpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xc4): undefined reference to `__builtin_strncpy'
+OTHER_CRASH pr93402: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x118): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr93434: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x3bc): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr93494: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr93582: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x104): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr93744-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr93744-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x168): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1e8): undefined reference to `__builtin_abort'
+OTHER_CRASH pr93744-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x168): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x1e8): undefined reference to `__builtin_abort'
+PARSE_CRASH pr93908: /home/forrest/CLionProjects/free/test/torture/pr93908.c:25:47: error: expected ';', got token kind 77
+free-cc: 1 error(s) generated
+OTHER_CRASH pr93945: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x2c): undefined reference to `__builtin_memset'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `baz':
+OTHER_CRASH pr94130: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x34): undefined reference to `__builtin_memset'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0xdc): undefined reference to `__builtin_abort'
+OTHER_CRASH pr94134: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xc4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr94412: /home/forrest/CLionProjects/free/test/torture/pr94412.c:20:13: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr94412.c:20:15: error: expected ';', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr94412.c:20:20: error: expected ';', got token kind 44
+PARSE_CRASH pr94524-1: /home/forrest/CLionProjects/free/test/torture/pr94524-1.c:15:18: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr94524-1.c:15:20: error: expected ')', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr94524-1.c:15:20: error: expected ';', got token kind 0
+PARSE_CRASH pr94524-2: /home/forrest/CLionProjects/free/test/torture/pr94524-2.c:15:18: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr94524-2.c:15:25: error: expected ')', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/pr94524-2.c:15:25: error: expected ';', got token kind 44
+OTHER_CRASH pr94567: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1b0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr94591: /home/forrest/CLionProjects/free/test/torture/pr94591.c:9:47: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr94591.c:9:49: error: expected ')', got token kind 0
+/home/forrest/CLionProjects/free/test/torture/pr94591.c:9:49: error: expected ';', got token kind 0
+OTHER_CRASH pr94724: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x6c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr94809: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr95731: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x924): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr96549: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x84): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97073: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97325: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x90): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97386-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x6c): undefined reference to `__builtin_bswap16'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH pr97386-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x124): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97404: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1a0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97421-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x188): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97421-3: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1e8): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97764: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x60): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97836: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xd4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97888-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x1e4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr97888-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x6c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+PARSE_CRASH pr98366: /home/forrest/CLionProjects/free/test/torture/pr98366.c:5:17: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/pr98366.c:5:33: error: expected ';', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/pr98366.c:10:33: error: expected expression, got token kind 43
+OTHER_CRASH pr98474: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x13c): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr98681: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xf0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr98727: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x180): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr98736: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x248): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr98853-1: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `foo':
+(.text+0x58): undefined reference to `__builtin_memcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+OTHER_CRASH pr98853-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb4): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr99079: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xb0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH pr99751: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0xa0): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH printf-1: /home/forrest/CLionProjects/free/test/torture/printf-1.c:5:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH printf-chk-1: /home/forrest/CLionProjects/free/test/torture/printf-chk-1.c:5:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH restrict-1: /home/forrest/CLionProjects/free/test/torture/restrict-1.c:14:8: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH return-addr: /home/forrest/CLionProjects/free/test/torture/return-addr.c:16:26: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/return-addr.c:6: warning: unknown attribute 'noclone'
+/home/forrest/CLionProjects/free/test/torture/return-addr.c:6: warning: unknown attribute 'noipa'
+OTHER_CRASH scal-to-vec1: arena_alloc: out of memory (67320880/67108864)
+OTHER_CRASH scal-to-vec2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x3ac): undefined reference to `__builtin_abort'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x4b0): undefined reference to `__builtin_abort'
+PARSE_CRASH scal-to-vec3: /home/forrest/CLionProjects/free/test/torture/scal-to-vec3.c:17:34: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/scal-to-vec3.c:17:35: error: expected ';', got token kind 1
+/home/forrest/CLionProjects/free/test/torture/scal-to-vec3.c:17:49: error: expected ';', got token kind 44
+OTHER_CRASH shiftdi-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x180): undefined reference to `__builtin_abort'
+collect2: error: ld returned 1 exit status
+OTHER_CRASH simd-4: /home/forrest/CLionProjects/free/test/torture/simd-4.c:3:1: error: cannot find include file 'stdint.h'
+OTHER_CRASH simd-5: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+(.text+0x250): undefined reference to `__builtin_memcmp'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x29c): undefined reference to `__builtin_memcmp'
+OTHER_CRASH stdarg-1: /home/forrest/CLionProjects/free/test/torture/stdarg-1.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH stdarg-2: /home/forrest/CLionProjects/free/test/torture/stdarg-2.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH stdarg-3: /home/forrest/CLionProjects/free/test/torture/stdarg-3.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH stdarg-4: /home/forrest/CLionProjects/free/test/torture/stdarg-4.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH stkalign: /home/forrest/CLionProjects/free/test/torture/stkalign.c:6:1: error: cannot find include file 'assert.h'
+OTHER_CRASH strcmp-1: /home/forrest/CLionProjects/free/test/torture/strcmp-1.c:9:1: error: cannot find include file 'string.h'
+OTHER_CRASH strcpy-1: /home/forrest/CLionProjects/free/test/torture/strcpy-1.c:7:1: error: cannot find include file 'string.h'
+OTHER_CRASH strcpy-2: /usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `f':
+(.text+0x2c): undefined reference to `__builtin_strcpy'
+/usr/bin/aarch64-linux-gnu-ld.bfd: /tmp/free-cc-1.o: in function `main':
+PARSE_CRASH strct-pack-3: /home/forrest/CLionProjects/free/test/torture/strct-pack-3.c:10:3: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/strct-pack-3.c:11:1: error: expected ';', got token kind 43
+free-cc: 2 error(s) generated
+OTHER_CRASH strct-stdarg-1: /home/forrest/CLionProjects/free/test/torture/strct-stdarg-1.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH strct-varg-1: /home/forrest/CLionProjects/free/test/torture/strct-varg-1.c:2:1: error: cannot find include file 'stdarg.h'
+PARSE_CRASH string-opt-17: /home/forrest/CLionProjects/free/test/torture/string-opt-17.c:7:23: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/string-opt-17.c:14:1: error: expected ';', got token kind 2
+free-cc: 2 error(s) generated
+PARSE_CRASH string-opt-18: /home/forrest/CLionProjects/free/test/torture/string-opt-18.c:8:23: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH string-opt-5: /home/forrest/CLionProjects/free/test/torture/string-opt-5.c:9:22: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+OTHER_CRASH strlen-1: /home/forrest/CLionProjects/free/test/torture/strlen-1.c:9:1: error: cannot find include file 'string.h'
+PARSE_CRASH strlen-2: /home/forrest/CLionProjects/free/test/torture/strlen-2.c:3:22: error: expected ';', got token kind 2
+arena_alloc: out of memory (67338264/67108864)
+PARSE_CRASH strlen-3: /home/forrest/CLionProjects/free/test/torture/strlen-3.c:6:22: error: expected ';', got token kind 2
+free-cc: 1 error(s) generated
+PARSE_CRASH strlen-4: /home/forrest/CLionProjects/free/test/torture/strlen-4.c:7:22: error: expected ';', got token kind 2
+arena_alloc: out of memory (67183080/67108864)
+PARSE_CRASH strlen-5: /home/forrest/CLionProjects/free/test/torture/strlen-5.c:5:22: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/strlen-5.c:71:5: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/strlen-5.c:71:7: error: expected '}', got token kind 4
+PARSE_CRASH strlen-6: /home/forrest/CLionProjects/free/test/torture/strlen-6.c:5:22: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/strlen-6.c:57:28: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/strlen-6.c:57:30: error: expected '}', got token kind 4
+PARSE_CRASH strlen-7: /home/forrest/CLionProjects/free/test/torture/strlen-7.c:8: warning: unknown attribute 'noipa'
+/home/forrest/CLionProjects/free/test/torture/strlen-7.c:16: warning: unknown attribute 'noipa'
+/home/forrest/CLionProjects/free/test/torture/strlen-7.c:34:53: error: expected expression, got token kind 7
+OTHER_CRASH strncmp-1: /home/forrest/CLionProjects/free/test/torture/strncmp-1.c:10:1: error: cannot find include file 'string.h'
+PARSE_CRASH struct-ini-4: /home/forrest/CLionProjects/free/test/torture/struct-ini-4.c:10:4: error: expected expression, got token kind 48
+free-cc: 1 error(s) generated
+OTHER_CRASH struct-ret-1: /home/forrest/CLionProjects/free/test/torture/struct-ret-1.c:2:1: error: cannot find include file 'stdio.h'
+PARSE_CRASH tstdi-1: /home/forrest/CLionProjects/free/test/torture/tstdi-1.c:7:6: error: expected ';', got token kind 70
+/home/forrest/CLionProjects/free/test/torture/tstdi-1.c:8:1: error: expected ';', got token kind 43
+/home/forrest/CLionProjects/free/test/torture/tstdi-1.c:17:1: error: expected ';', got token kind 43
+PARSE_CRASH unroll-1: /home/forrest/CLionProjects/free/test/torture/unroll-1.c:6:8: error: expected ';', got token kind 69
+free-cc: 1 error(s) generated
+OTHER_CRASH va-arg-1: /home/forrest/CLionProjects/free/test/torture/va-arg-1.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-10: /home/forrest/CLionProjects/free/test/torture/va-arg-10.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-11: /home/forrest/CLionProjects/free/test/torture/va-arg-11.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-12: /home/forrest/CLionProjects/free/test/torture/va-arg-12.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-13: /home/forrest/CLionProjects/free/test/torture/va-arg-13.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-14: /home/forrest/CLionProjects/free/test/torture/va-arg-14.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-15: /home/forrest/CLionProjects/free/test/torture/va-arg-15.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-16: /home/forrest/CLionProjects/free/test/torture/va-arg-16.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-17: /home/forrest/CLionProjects/free/test/torture/va-arg-17.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-18: /home/forrest/CLionProjects/free/test/torture/va-arg-18.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-19: /home/forrest/CLionProjects/free/test/torture/va-arg-19.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-2: /home/forrest/CLionProjects/free/test/torture/va-arg-2.c:8:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-20: /home/forrest/CLionProjects/free/test/torture/va-arg-20.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-21: /home/forrest/CLionProjects/free/test/torture/va-arg-21.c:9:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-22: /home/forrest/CLionProjects/free/test/torture/va-arg-22.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-23: /home/forrest/CLionProjects/free/test/torture/va-arg-23.c:7:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-24: /home/forrest/CLionProjects/free/test/torture/va-arg-24.c:6:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-26: /home/forrest/CLionProjects/free/test/torture/va-arg-26.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-4: /home/forrest/CLionProjects/free/test/torture/va-arg-4.c:5:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-5: /home/forrest/CLionProjects/free/test/torture/va-arg-5.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-6: /home/forrest/CLionProjects/free/test/torture/va-arg-6.c:2:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-7: /home/forrest/CLionProjects/free/test/torture/va-arg-7.c:8:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-8: /home/forrest/CLionProjects/free/test/torture/va-arg-8.c:8:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-9: /home/forrest/CLionProjects/free/test/torture/va-arg-9.c:5:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-pack-1: /home/forrest/CLionProjects/free/test/torture/va-arg-pack-1.c:4:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH va-arg-trap-1: /home/forrest/CLionProjects/free/test/torture/va-arg-trap-1.c:9:1: error: cannot find include file 'stdarg.h'
+OTHER_CRASH vfprintf-1: /home/forrest/CLionProjects/free/test/torture/vfprintf-1.c:5:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH vfprintf-chk-1: /home/forrest/CLionProjects/free/test/torture/vfprintf-chk-1.c:5:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH vprintf-1: /home/forrest/CLionProjects/free/test/torture/vprintf-1.c:6:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH vprintf-chk-1: /home/forrest/CLionProjects/free/test/torture/vprintf-chk-1.c:6:1: error: cannot find include file 'stdio.h'
+OTHER_CRASH vrp-6: /home/forrest/CLionProjects/free/test/torture/vrp-6.c:3:1: error: cannot find include file 'limits.h'
+PARSE_CRASH wchar_t-1: /home/forrest/CLionProjects/free/test/torture/wchar_t-1.c:2:24: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/wchar_t-1.c:3:9: error: expected ';', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/wchar_t-1.c:4:9: error: expected ';', got token kind 2
+PARSE_CRASH widechar-1: /home/forrest/CLionProjects/free/test/torture/widechar-1.c:4:12: error: expected ')', got token kind 4
+/home/forrest/CLionProjects/free/test/torture/widechar-1.c:15:16: error: expected ';', got token kind 42
+/home/forrest/CLionProjects/free/test/torture/widechar-1.c:15:16: error: expected expression, got token kind 42
+OTHER_CRASH widechar-2: /home/forrest/CLionProjects/free/test/torture/widechar-2.c:2:1: error: cannot find include file 'stddef.h'
+PARSE_CRASH widechar-3: /home/forrest/CLionProjects/free/test/torture/widechar-3.c:11:22: error: expected ')', got token kind 3
+/home/forrest/CLionProjects/free/test/torture/widechar-3.c:11:22: error: expected ';', got token kind 3
+/home/forrest/CLionProjects/free/test/torture/widechar-3.c:11:33: error: expected ';', got token kind 42
+PARSE_CRASH zero-struct-1: /home/forrest/CLionProjects/free/test/torture/zero-struct-1.c:9:35: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/zero-struct-1.c:9:36: error: expected ';', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/zero-struct-1.c:11:1: error: expected ';', got token kind 44
+PARSE_CRASH zero-struct-2: /home/forrest/CLionProjects/free/test/torture/zero-struct-2.c:15:34: error: expected expression, got token kind 43
+/home/forrest/CLionProjects/free/test/torture/zero-struct-2.c:15:67: error: expected ';', got token kind 44
+/home/forrest/CLionProjects/free/test/torture/zero-struct-2.c:16:3: error: expected ';', got token kind 68
+PARSE_CRASH zerolen-2: /home/forrest/CLionProjects/free/test/torture/zerolen-2.c:16:40: error: expected expression, got token kind 77
+/home/forrest/CLionProjects/free/test/torture/zerolen-2.c:16:47: error: expected ')', got token kind 2
+/home/forrest/CLionProjects/free/test/torture/zerolen-2.c:16:47: error: expected ')', got token kind 2

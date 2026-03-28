@@ -1,0 +1,71 @@
+Start testing: Mar 15 07:36 CDT
+----------------------------------------------------------
+1/28 Testing: test-libcx-test_map
+1/28 Test: test-libcx-test_map
+Command: "/home/forrest/CLionProjects/free/build/run_test.sh" "/home/forrest/CLionProjects/free/build/test-libcx-test_map"
+Directory: /home/forrest/CLionProjects/free/build
+"test-libcx-test_map" start time: Mar 15 07:36 CDT
+Output:
+----------------------------------------------------------
+test_map:
+  PASS map_create
+  PASS map_set_get
+  PASS map_overwrite
+  PASS map_get_missing
+  PASS map_del
+  PASS map_many
+
+6 tests: 6 passed, 0 failed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test-libcx-test_map" end time: Mar 15 07:36 CDT
+"test-libcx-test_map" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/28 Testing: test-libcx-test_str
+2/28 Test: test-libcx-test_str
+Command: "/home/forrest/CLionProjects/free/build/run_test.sh" "/home/forrest/CLionProjects/free/build/test-libcx-test_str"
+Directory: /home/forrest/CLionProjects/free/build
+"test-libcx-test_str" start time: Mar 15 07:36 CDT
+Output:
+----------------------------------------------------------
+test_str:
+  PASS str_new
+  PASS str_appendc
+  PASS str_append
+  PASS str_appendf
+  PASS str_clear
+  PASS str_dup
+  PASS str_slice
+  PASS str_find
+  PASS str_grow
+
+9 tests: 9 passed, 0 failed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test-libcx-test_str" end time: Mar 15 07:36 CDT
+"test-libcx-test_str" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/28 Testing: test-libcx-test_vec
+3/28 Test: test-libcx-test_vec
+Command: "/home/forrest/CLionProjects/free/build/run_test.sh" "/home/forrest/CLionProjects/free/build/test-libcx-test_vec"
+Directory: /home/forrest/CLionProjects/free/build
+"test-libcx-test_vec" start time: Mar 15 07:36 CDT
+Output:
+----------------------------------------------------------
+test_vec:
+  PASS vec_new
+  PASS vec_push_get
+  PASS vec_pop
+  PASS vec_set
+  PASS vec_grow
+  PASS vec_ptr
+  PASS vec_free
+
+7 tests: 7 passed, 0 failed
+<end of output>

@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -nostdlib -nostartfiles -static -Wl,--dependency-file=CMakeFiles/free-objdump.dir/link.d "CMakeFiles/free-objdump.dir/src/objdump/objdump.c.o" "CMakeFiles/free-objdump.dir/src/libc/arch/aarch64/crt.S.o" "CMakeFiles/free-objdump.dir/src/libc/arch/aarch64/syscall.S.o" -o free-objdump

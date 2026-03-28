@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -std=c89 -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/free-cpp.dir/link.d "CMakeFiles/free-cpp.dir/src/cpp/cpp.c.o" "CMakeFiles/free-cpp.dir/src/cc/lex.c.o" "CMakeFiles/free-cpp.dir/src/cc/pp.c.o" "CMakeFiles/free-cpp.dir/src/cc/ext_builtins.c.o" "CMakeFiles/free-cpp.dir/src/cc/diag.c.o" "CMakeFiles/free-cpp.dir/src/cc/util.c.o" -o free-cpp

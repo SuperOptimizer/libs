@@ -1,0 +1,9 @@
+TCC test suite report
+Compiler: /home/forrest/CLionProjects/free/build/free-cc
+Flags: -w
+Date: Tue Mar 24 14:09:25 CDT 2026
+Total: 129
+Passed: 88
+Failed: 13
+Skipped: 28
+Timeouts: 1
