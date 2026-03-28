@@ -572,6 +572,7 @@ typedef enum {
     ZARR_DT_INT8, ZARR_DT_INT16, ZARR_DT_INT32, ZARR_DT_INT64,
     ZARR_DT_UINT8, ZARR_DT_UINT16, ZARR_DT_UINT32, ZARR_DT_UINT64,
     ZARR_DT_FLOAT16, ZARR_DT_FLOAT32, ZARR_DT_FLOAT64,
+    ZARR_DT_COMPLEX64, ZARR_DT_COMPLEX128,
     ZARR_DT_UNKNOWN,
 } zarr__dtype;
 
@@ -610,6 +611,7 @@ typedef struct {
     bool             index_at_start;    // shard index location: true=start, false=end
     bool             has_transpose;
     int              transpose_order[ZARR_MAX_DIM];
+    bool             has_delta_filter;  // v2 delta filter
 } zarr__meta;
 
 static int zarr__dtype_size(zarr__dtype dt) {
@@ -624,9 +626,11 @@ static int zarr__dtype_size(zarr__dtype dt) {
         case ZARR_DT_UINT32:  return 4;
         case ZARR_DT_UINT64:  return 8;
         case ZARR_DT_FLOAT16: return 2;
-        case ZARR_DT_FLOAT32: return 4;
-        case ZARR_DT_FLOAT64: return 8;
-        default:              return 0;
+        case ZARR_DT_FLOAT32:    return 4;
+        case ZARR_DT_FLOAT64:    return 8;
+        case ZARR_DT_COMPLEX64:  return 8;
+        case ZARR_DT_COMPLEX128: return 16;
+        default:                 return 0;
     }
 }
 
@@ -659,6 +663,10 @@ static zarr__dtype zarr__parse_numpy_dtype(const char* s, bool* little_endian, i
         if (sz == 4) return ZARR_DT_FLOAT32;
         if (sz == 8) return ZARR_DT_FLOAT64;
     }
+    if (kind == 'c') {
+        if (sz == 8) return ZARR_DT_COMPLEX64;   // 2 x float32
+        if (sz == 16) return ZARR_DT_COMPLEX128;  // 2 x float64
+    }
     return ZARR_DT_UNKNOWN;
 }
 
@@ -675,9 +683,11 @@ static zarr__dtype zarr__parse_v3_dtype(const char* s, bool* little_endian, int*
         {"uint16",  ZARR_DT_UINT16,  2},
         {"uint32",  ZARR_DT_UINT32,  4},
         {"uint64",  ZARR_DT_UINT64,  8},
-        {"float16", ZARR_DT_FLOAT16, 2},
-        {"float32", ZARR_DT_FLOAT32, 4},
-        {"float64", ZARR_DT_FLOAT64, 8},
+        {"float16",    ZARR_DT_FLOAT16,    2},
+        {"float32",    ZARR_DT_FLOAT32,    4},
+        {"float64",    ZARR_DT_FLOAT64,    8},
+        {"complex64",  ZARR_DT_COMPLEX64,  8},
+        {"complex128", ZARR_DT_COMPLEX128, 16},
     };
     for (size_t i = 0; i < sizeof(table)/sizeof(table[0]); i++) {
         if (strcmp(s, table[i].name) == 0) {
@@ -790,22 +800,34 @@ static zarr_status zarr__parse_v2_meta(const char* json, size_t len, zarr__meta*
         }
     }
 
+    // filters
+    if (zarr__json_find_key(&j, "filters")) {
+        zarr__json_skip_ws(&j);
+        if (j.pos < j.len && j.data[j.pos] != 'n') {
+            size_t fstart = j.pos;
+            zarr__json_skip_value(&j);
+            size_t fend = j.pos;
+            if (strstr(json + fstart, "\"delta\"")) {
+                meta->has_delta_filter = true;
+            }
+        } else {
+            zarr__json_skip_value(&j);
+        }
+    }
+
     // fill_value
     if (zarr__json_find_key(&j, "fill_value")) {
         zarr__json_skip_ws(&j);
         if (j.pos < j.len) {
             char c = j.data[j.pos];
             if (c == 'n') {
-                // null or NaN
                 meta->fill_value = 0;
                 zarr__json_skip_value(&j);
             } else if (c == '"') {
-                // String like "NaN", "Infinity", etc.
                 char fvs[32];
                 zarr__json_string(&j, fvs, sizeof(fvs));
-                meta->fill_value = 0;  // NaN/Infinity → 0 for u8
+                meta->fill_value = 0;
             } else {
-                // Number
                 int64_t fv;
                 if (zarr__json_int(&j, &fv)) {
                     meta->fill_value = (uint8_t)(fv < 0 ? 0 : (fv > 255 ? 255 : fv));
@@ -966,7 +988,7 @@ static void zarr__parse_codec_entry(const char* entry, size_t entry_len,
 static void zarr__parse_codecs_array(const char* codecs, size_t codecs_len,
                                       zarr__meta* meta, bool is_inner) {
     // codecs is a JSON array: [{...}, {...}, ...]
-    // Walk through and find each object
+    // Walk through and find each top-level object
     int depth = 0;
     size_t obj_start = 0;
     bool in_string = false;
@@ -978,14 +1000,14 @@ static void zarr__parse_codecs_array(const char* codecs, size_t codecs_len,
             continue;
         }
         if (c == '"') { in_string = true; continue; }
-        if (c == '{') {
-            if (depth == 1) obj_start = i;  // top-level object in array
+        if (c == '[' || c == '{') {
             depth++;
-        } else if (c == '}') {
-            depth--;
-            if (depth == 1) {
+            if (depth == 2 && c == '{') obj_start = i;  // top-level object in array (depth: 1=array, 2=object)
+        } else if (c == ']' || c == '}') {
+            if (depth == 2 && c == '}') {
                 zarr__parse_codec_entry(codecs + obj_start, i - obj_start + 1, meta, is_inner);
             }
+            depth--;
         }
     }
 }
@@ -1200,6 +1222,7 @@ static void zarr__convert_to_u8(const uint8_t* src, uint8_t* dst,
             for (size_t i = 0; i < count; i++) {
                 float v;
                 memcpy(&v, src + i * 4, 4);
+                if (isnan(v) || isinf(v)) { dst[i] = 0; continue; }
                 int32_t iv = (int32_t)roundf(v);
                 dst[i] = iv < 0 ? 0 : (iv > 255 ? 255 : (uint8_t)iv);
             }
@@ -1208,7 +1231,32 @@ static void zarr__convert_to_u8(const uint8_t* src, uint8_t* dst,
             for (size_t i = 0; i < count; i++) {
                 double v;
                 memcpy(&v, src + i * 8, 8);
+                if (isnan(v) || isinf(v)) { dst[i] = 0; continue; }
                 int64_t iv = (int64_t)round(v);
+                dst[i] = iv < 0 ? 0 : (iv > 255 ? 255 : (uint8_t)iv);
+            }
+            break;
+        case ZARR_DT_COMPLEX64:
+            // complex64 = 2 x float32 — use magnitude
+            for (size_t i = 0; i < count; i++) {
+                float re, im;
+                memcpy(&re, src + i * 8, 4);
+                memcpy(&im, src + i * 8 + 4, 4);
+                float mag = sqrtf(re * re + im * im);
+                if (isnan(mag) || isinf(mag)) { dst[i] = 0; continue; }
+                int32_t iv = (int32_t)roundf(mag);
+                dst[i] = iv < 0 ? 0 : (iv > 255 ? 255 : (uint8_t)iv);
+            }
+            break;
+        case ZARR_DT_COMPLEX128:
+            // complex128 = 2 x float64 — use magnitude
+            for (size_t i = 0; i < count; i++) {
+                double re, im;
+                memcpy(&re, src + i * 16, 8);
+                memcpy(&im, src + i * 16 + 8, 8);
+                double mag = sqrt(re * re + im * im);
+                if (isnan(mag) || isinf(mag)) { dst[i] = 0; continue; }
+                int64_t iv = (int64_t)round(mag);
                 dst[i] = iv < 0 ? 0 : (iv > 255 ? 255 : (uint8_t)iv);
             }
             break;
@@ -1218,6 +1266,33 @@ static void zarr__convert_to_u8(const uint8_t* src, uint8_t* dst,
     }
 
     if (work) ZARR_FREE(work);
+}
+
+// ── F-order Transpose ───────────────────────────────────────────────────────
+
+// Transpose a 3D buffer from Fortran order (column-major) to C order (row-major).
+// For 3D: F-order stores [x fastest, then y, then z] → C-order [z fastest... wait no]
+// F-order: data[x * sy*sz + y * sz + z] = voxel(z,y,x) in C indexing
+// We need: data_c[z * sy*sx + y * sx + x] = data_f[x * sy*sz + y * sz + z]
+static void zarr__transpose_f_to_c(const uint8_t* f_buf, uint8_t* c_buf,
+                                    int8_t ndim, const int64_t* shape) {
+    if (ndim != 3) {
+        // For non-3D, just copy (F-order transpose is complex for arbitrary dims)
+        int64_t n = 1;
+        for (int8_t i = 0; i < ndim; i++) n *= shape[i];
+        memcpy(c_buf, f_buf, (size_t)n);
+        return;
+    }
+    int64_t sz = shape[0], sy = shape[1], sx = shape[2];
+    for (int64_t z = 0; z < sz; z++) {
+        for (int64_t y = 0; y < sy; y++) {
+            for (int64_t x = 0; x < sx; x++) {
+                // F-order index: x * (sy*sz) + y * sz + z
+                // C-order index: z * (sy*sx) + y * sx + x
+                c_buf[z * sy * sx + y * sx + x] = f_buf[x * sy * sz + y * sz + z];
+            }
+        }
+    }
 }
 
 // ── Standalone Decompression ─────────────────────────────────────────────────
@@ -1464,6 +1539,23 @@ static zarr_status zarr__ingest_unsharded(zarr_array* dst, const char* src_path,
             size_t raw_len;
             uint8_t* raw = zarr__read_raw_chunk(cpath, meta, &raw_len);
             if (raw) {
+                // Delta filter: undo cumulative delta encoding
+                if (meta->has_delta_filter && raw_len > 0) {
+                    for (size_t di = 1; di < raw_len; di++) {
+                        raw[di] = (uint8_t)(raw[di] + raw[di - 1]);
+                    }
+                }
+
+                // F-order transpose if needed (before dtype conversion)
+                if (meta->order == 'F' && meta->ndim == 3) {
+                    size_t raw_bytes = region_elems * meta->dtype_size;
+                    uint8_t* transposed = ZARR_MALLOC(raw_bytes);
+                    if (transposed) {
+                        zarr__transpose_f_to_c(raw, transposed, meta->ndim, buffershape);
+                        ZARR_FREE(raw);
+                        raw = transposed;
+                    }
+                }
                 zarr__convert_to_u8(raw, u8_buf, region_elems, meta->dtype,
                                      meta->little_endian);
                 ZARR_FREE(raw);

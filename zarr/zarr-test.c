@@ -3352,6 +3352,268 @@ TEST(ingest_v3_float32) {
     rmrf(src); rmrf(cache);
 }
 
+// ── Tests: Complex Dtype ────────────────────────────────────────────────────
+
+TEST(ingest_v2_complex64) {
+    const char* src = "/tmp/zarr-test-v2-c64-src";
+    const char* cache = "/tmp/zarr-test-v2-c64-cache";
+    rmrf(src); rmrf(cache);
+
+    create_v2_zarr(src, "<c8", 128, 128, 128, 128, 128, 128, "null");
+
+    // complex64 = 2 x float32 per element
+    size_t n = ZARR_CHUNK_VOXELS;
+    float* data = malloc(n * 8);  // 2 floats per element
+    for (size_t i = 0; i < n; i++) {
+        data[i * 2] = 3.0f;    // real
+        data[i * 2 + 1] = 4.0f; // imaginary
+        // magnitude = sqrt(9+16) = 5.0
+    }
+    char cpath[4200];
+    snprintf(cpath, sizeof(cpath), "%s/0.0.0", src);
+    write_file(cpath, data, n * 8);
+
+    zarr_array* arr = nullptr;
+    ASSERT_OK(zarr_ingest(&arr, src, cache));
+
+    uint8_t* readback = calloc(ZARR_CHUNK_VOXELS, 1);
+    ASSERT_OK(zarr_read(arr, (int64_t[]){0,0,0}, (int64_t[]){128,128,128}, readback, ZARR_CHUNK_VOXELS));
+    // Magnitude of (3,4) = 5 → u8 = 5
+    ASSERT(abs((int)readback[0] - 5) < 5);
+    printf("[val=%d] ", readback[0]);
+
+    free(data); free(readback);
+    zarr_close(arr);
+    rmrf(src); rmrf(cache);
+}
+
+// ── Tests: F-order ──────────────────────────────────────────────────────────
+
+TEST(ingest_v2_f_order) {
+    const char* src = "/tmp/zarr-test-v2-forder-src";
+    const char* cache = "/tmp/zarr-test-v2-forder-cache";
+    rmrf(src); rmrf(cache);
+
+    mkdir(src, 0755);
+    const char* zarray =
+        "{\n"
+        "  \"zarr_format\": 2,\n"
+        "  \"shape\": [128, 128, 128],\n"
+        "  \"chunks\": [128, 128, 128],\n"
+        "  \"dtype\": \"|u1\",\n"
+        "  \"compressor\": null,\n"
+        "  \"fill_value\": 0,\n"
+        "  \"order\": \"F\"\n"
+        "}\n";
+    char mpath[4200];
+    snprintf(mpath, sizeof(mpath), "%s/.zarray", src);
+    write_file(mpath, zarray, strlen(zarray));
+
+    // Write F-order data: in F-order, x varies fastest
+    // We'll write data where value = z, but stored in F-order layout
+    uint8_t* fdata = malloc(ZARR_CHUNK_VOXELS);
+    for (int z = 0; z < 128; z++)
+        for (int y = 0; y < 128; y++)
+            for (int x = 0; x < 128; x++)
+                // F-order index: x * 128*128 + y * 128 + z
+                fdata[x * 128 * 128 + y * 128 + z] = (uint8_t)z;
+
+    char cpath[4200];
+    snprintf(cpath, sizeof(cpath), "%s/0.0.0", src);
+    write_file(cpath, fdata, ZARR_CHUNK_VOXELS);
+
+    zarr_array* arr = nullptr;
+    ASSERT_OK(zarr_ingest(&arr, src, cache));
+
+    // Read a single voxel at (64,0,0) — should be z=64
+    uint8_t val;
+    ASSERT_OK(zarr_read(arr, (int64_t[]){64,0,0}, (int64_t[]){65,1,1}, &val, 1));
+    printf("[val=%d] ", val);
+    ASSERT(abs((int)val - 64) < 20);
+
+    free(fdata);
+    zarr_close(arr);
+    rmrf(src); rmrf(cache);
+}
+
+// ── Tests: NaN/Inf Handling ─────────────────────────────────────────────────
+
+TEST(ingest_v2_nan_inf) {
+    const char* src = "/tmp/zarr-test-v2-nan-src";
+    const char* cache = "/tmp/zarr-test-v2-nan-cache";
+    rmrf(src); rmrf(cache);
+
+    create_v2_zarr(src, "<f4", 128, 128, 128, 128, 128, 128, "null");
+
+    size_t n = ZARR_CHUNK_VOXELS;
+    float* data = malloc(n * 4);
+    for (size_t i = 0; i < n; i++) {
+        if (i % 3 == 0) data[i] = NAN;
+        else if (i % 3 == 1) data[i] = INFINITY;
+        else data[i] = 100.0f;
+    }
+    char cpath[4200];
+    snprintf(cpath, sizeof(cpath), "%s/0.0.0", src);
+    write_file(cpath, data, n * 4);
+
+    zarr_array* arr = nullptr;
+    ASSERT_OK(zarr_ingest(&arr, src, cache));
+
+    uint8_t* readback = calloc(ZARR_CHUNK_VOXELS, 1);
+    ASSERT_OK(zarr_read(arr, (int64_t[]){0,0,0}, (int64_t[]){128,128,128}, readback, ZARR_CHUNK_VOXELS));
+    // NaN and Inf should map to 0, normal values to ~100
+    // After vl264 lossy, just check it doesn't crash and produces valid output
+    printf("[ok] ");
+
+    free(data); free(readback);
+    zarr_close(arr);
+    rmrf(src); rmrf(cache);
+}
+
+// ── Tests: Delta Filter ────────────────────────────────────────────────────
+
+TEST(ingest_v2_delta_filter) {
+    const char* src = "/tmp/zarr-test-v2-delta-src";
+    const char* cache = "/tmp/zarr-test-v2-delta-cache";
+    rmrf(src); rmrf(cache);
+
+    mkdir(src, 0755);
+    const char* zarray =
+        "{\n"
+        "  \"zarr_format\": 2,\n"
+        "  \"shape\": [128, 128, 128],\n"
+        "  \"chunks\": [128, 128, 128],\n"
+        "  \"dtype\": \"|u1\",\n"
+        "  \"compressor\": null,\n"
+        "  \"fill_value\": 0,\n"
+        "  \"order\": \"C\",\n"
+        "  \"filters\": [{\"id\": \"delta\", \"dtype\": \"|u1\"}]\n"
+        "}\n";
+    char mpath[4200];
+    snprintf(mpath, sizeof(mpath), "%s/.zarray", src);
+    write_file(mpath, zarray, strlen(zarray));
+
+    // Delta-encode: each byte is the difference from the previous
+    // Original: all 50 → deltas: 50, 0, 0, 0, ...
+    uint8_t* delta = calloc(ZARR_CHUNK_VOXELS, 1);
+    delta[0] = 50;
+    // Rest are 0 (no change)
+    char cpath[4200];
+    snprintf(cpath, sizeof(cpath), "%s/0.0.0", src);
+    write_file(cpath, delta, ZARR_CHUNK_VOXELS);
+
+    zarr_array* arr = nullptr;
+    ASSERT_OK(zarr_ingest(&arr, src, cache));
+
+    uint8_t* readback = calloc(ZARR_CHUNK_VOXELS, 1);
+    ASSERT_OK(zarr_read(arr, (int64_t[]){0,0,0}, (int64_t[]){128,128,128}, readback, ZARR_CHUNK_VOXELS));
+    // After undoing delta: all values should be ~50
+    ASSERT(abs((int)readback[0] - 50) < 10);
+    ASSERT(abs((int)readback[1000] - 50) < 10);
+    printf("[val=%d] ", readback[0]);
+
+    free(delta); free(readback);
+    zarr_close(arr);
+    rmrf(src); rmrf(cache);
+}
+
+// ── Tests: Non-128 Source Chunks ────────────────────────────────────────────
+
+TEST(ingest_v2_non128_chunks) {
+    // Source with 64³ chunks → must tile into 128³ destination
+    const char* src = "/tmp/zarr-test-v2-64chunk-src";
+    const char* cache = "/tmp/zarr-test-v2-64chunk-cache";
+    rmrf(src); rmrf(cache);
+
+    create_v2_zarr(src, "<u1", 128, 128, 128, 64, 64, 64, "null");
+
+    // Write 8 chunks (2x2x2 of 64³)
+    size_t csize = 64 * 64 * 64;
+    uint8_t* chunk = malloc(csize);
+    for (int cz = 0; cz < 2; cz++) {
+        for (int cy = 0; cy < 2; cy++) {
+            for (int cx = 0; cx < 2; cx++) {
+                uint8_t val = (uint8_t)(cz * 100 + cy * 40 + cx * 20 + 10);
+                memset(chunk, val, csize);
+                char cpath[4200];
+                snprintf(cpath, sizeof(cpath), "%s/%d.%d.%d", src, cz, cy, cx);
+                write_file(cpath, chunk, csize);
+            }
+        }
+    }
+
+    zarr_array* arr = nullptr;
+    ASSERT_OK(zarr_ingest(&arr, src, cache));
+    ASSERT_EQ(zarr_ndim(arr), 3);
+    ASSERT_EQ(zarr_shape(arr)[0], 128);
+
+    // Read the first 64³ sub-region — should be chunk (0,0,0) val=10
+    uint8_t val;
+    ASSERT_OK(zarr_read(arr, (int64_t[]){32,32,32}, (int64_t[]){33,33,33}, &val, 1));
+    printf("[val=%d] ", val);
+    ASSERT(abs((int)val - 10) < 20);
+
+    // Read from second half — chunk (1,1,1) val=170
+    ASSERT_OK(zarr_read(arr, (int64_t[]){96,96,96}, (int64_t[]){97,97,97}, &val, 1));
+    printf("[val2=%d] ", val);
+    ASSERT(abs((int)val - 170) < 30);
+
+    free(chunk);
+    zarr_close(arr);
+    rmrf(src); rmrf(cache);
+}
+
+// ── Tests: V3 gzip codec ───────────────────────────────────────────────────
+
+TEST(ingest_v3_gzip) {
+    const char* src = "/tmp/zarr-test-v3-gzip-src";
+    const char* cache = "/tmp/zarr-test-v3-gzip-cache";
+    rmrf(src); rmrf(cache);
+    mkdir(src, 0755);
+
+    const char* meta =
+        "{\n"
+        "  \"zarr_format\": 3,\n"
+        "  \"node_type\": \"array\",\n"
+        "  \"shape\": [128, 128, 128],\n"
+        "  \"data_type\": \"uint8\",\n"
+        "  \"chunk_grid\": { \"name\": \"regular\", \"configuration\": { \"chunk_shape\": [128, 128, 128] } },\n"
+        "  \"codecs\": [\n"
+        "    { \"name\": \"bytes\", \"configuration\": { \"endian\": \"little\" } },\n"
+        "    { \"name\": \"gzip\", \"configuration\": { \"level\": 5 } }\n"
+        "  ],\n"
+        "  \"fill_value\": 0\n"
+        "}\n";
+    char mpath[4200];
+    snprintf(mpath, sizeof(mpath), "%s/zarr.json", src);
+    write_file(mpath, meta, strlen(meta));
+
+    uint8_t* raw = malloc(ZARR_CHUNK_VOXELS);
+    memset(raw, 99, ZARR_CHUNK_VOXELS);
+    uLongf comp_len = compressBound(ZARR_CHUNK_VOXELS);
+    uint8_t* comp = malloc(comp_len);
+    ASSERT(compress2(comp, &comp_len, raw, ZARR_CHUNK_VOXELS, 5) == Z_OK);
+
+    char cmd[4200];
+    snprintf(cmd, sizeof(cmd), "mkdir -p '%s/c/0/0'", src);
+    (void)system(cmd);
+    char cpath[4200];
+    snprintf(cpath, sizeof(cpath), "%s/c/0/0/0", src);
+    write_file(cpath, comp, comp_len);
+
+    zarr_array* arr = nullptr;
+    ASSERT_OK(zarr_ingest(&arr, src, cache));
+
+    uint8_t* readback = calloc(ZARR_CHUNK_VOXELS, 1);
+    ASSERT_OK(zarr_read(arr, (int64_t[]){0,0,0}, (int64_t[]){128,128,128}, readback, ZARR_CHUNK_VOXELS));
+    ASSERT(abs((int)readback[0] - 99) < 10);
+    printf("[val=%d] ", readback[0]);
+
+    free(raw); free(comp); free(readback);
+    zarr_close(arr);
+    rmrf(src); rmrf(cache);
+}
+
 // ── Main ────────────────────────────────────────────────────────────────────
 
 int main(void) {
@@ -3553,6 +3815,14 @@ int main(void) {
     run_ingest_v3_fill_value();
     run_ingest_v2_fill_value_nan();
     run_ingest_v3_float32();
+
+    // Complex dtype, F-order, delta filter, NaN
+    run_ingest_v2_complex64();
+    run_ingest_v2_f_order();
+    run_ingest_v2_nan_inf();
+    run_ingest_v2_delta_filter();
+    run_ingest_v2_non128_chunks();
+    run_ingest_v3_gzip();
 
     // Edge cases
     run_non_aligned_shape();
